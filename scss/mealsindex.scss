@@ -332,7 +332,16 @@ body {
           padding: 30px 20px;
           margin-top: 20px;
           border-radius: 50px;
+          // background-image: url('../pics/ALLPASS字.png');
+          // background-position: center;
+          // background-repeat: no-repeat;
+          // background-size: cover;
           background-color: #ffffff84;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: start;
         }
 
         .project{
