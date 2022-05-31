@@ -27,9 +27,11 @@ $secondary_color: #6accbf;
   left: 50%;
   top: 50%;
 }
-
 body {
   background: $primary_color;
+  background-image: url("../pics/bkgd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 // 頁首固定在視窗上方
 #header {
@@ -287,183 +289,59 @@ body {
     position: absolute;
   }
 }
+// ----------------------MAIN----------------------------
 
-// 品牌故事
-ul{
-  // 修 data-aos="fade-left" bug
-  overflow-x: hidden;
-  .top_photo{
-    background-image: url("../pics/balls/Group\ 387.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 658px;
+// 文字白色方塊背景
+.right_of_customer{
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 70%;
+  margin: 10% auto;
+  padding: 3%;
+  position: relative;
+  // 文字設定
+  .text_color{
+    letter-spacing:10px;
+    line-height: 30px;
+  }
+  // 大標題
+  .right_of_inner_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    padding: 2%;
+  }
+  // 大標上日期
+  .right_of_inner_title::before{
+    content:" 2020 / 05 / 10 ";
+    display:block;
+    font-size: 24px;
+    padding: 0 0 32px 0;
+    color: #727272;
     @media (max-width:768px){
-      background-image: url("../pics/balls/Group\ 351.png");
-      height: 351px;
+      font-size: 15px;
+      padding: 0 0 25px 0;
+    }
+    @media (max-width:500px){
+      font-size: 12px;
     }
   }
-  .story_of_allpass{
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    img{
-      @include size(80%, 80%);
-      padding: 3%;
-    }
-    .story_content{
-        @include size(50%, 60%);
-        position: absolute;
-        top: 20%;
-        .title{
-          text-align: center;
-          font-size: 48px;
-          color: #6accbf;
-          @media(max-width:768px){
-            font-size: 35px;
-          }
-          @media(max-width:550px){
-            font-size: 25px;
-          }
-          @media(max-width:380px){
-            font-size: 20px;
-          } 
-        }
-        .title::after{
-            @include size(100%, 2px);
-            content: '';
-            display:block;
-            background-color: #FEAD3B;
-            margin: 10% auto;
-            
-        }
-        .show{
-          font-size: 35px;
-          text-align: center;
-          padding: 3% 0;
-          @media(max-width:990px){
-            font-size: 25px;
-          }
-          @media(max-width:768px){
-            font-size: 20px;
-          }
-          @media(max-width:550px){
-            font-size: 15px;
-          }
-          @media(max-width:400px){
-            font-size: 10px;
-          } 
-        
-          .inner_text{
-            font-size: 25px;
-            padding: 2% 2% 0 2%;
-            @media(max-width:990px){
-              font-size: 15px;
-            }
-            @media(max-width:768px){
-              font-size: 13px;
-            }
-            @media(max-width:550px){
-              font-size: 10px;
-            }
-            @media(max-width:380px){
-              font-size: 6px;
-            }
-          }
-          
-        }
-    }
+  // 我是分隔線
+  .line::before{
+    content:" ";
+    display:block;
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 2% 0;
   }
-}
-
-// 球位置
-ul{
-  .item1{
-    margin: 0 auto;
-    z-index: 1;
-    img{
-      @include size(65%, 65%);
-      // padding: 3%;
-      position: relative;
-      left:-10%;
-      top: -200px;
-      @media (max-width:1100px){
-        top: -150px;
-      }
-      @media (max-width:850px){
-        top: -130px;
-      }
-    }
+  // 內文中小標
+  .right_of_inner_text_title{
+    font-size: 20px;
+    padding: 3% 0 2% 0;
   }
-  .item2{
-    margin: 0 auto;
-    img{
-      @include size(45%, 45%);
-      position: relative;
-      left:40%;
-      top: -200px;
-      // padding: 3%;
-    }
-  }
-  .item3{
-    margin: 0 auto;
-    z-index:1;
-    img{
-      @include size(65%, 65%);
-      // padding: 3%;
-      position: relative;
-      left:-2%;
-      top: -270px;
-    }
-  }
-  .item4{
-    margin: 0 auto;
-    img{
-      @include size(50%, 50%);
-      // padding: 3%;
-      position: relative;
-      left:-5%;
-      top: -330px;
-    }
-  }
-  .item5{
-    margin: 0 auto;
-    img{
-      @include size(35%, 35%);
-      // padding: 3%;
-      position: relative;
-      left:50%;
-      top: -270px;
-    }
-  }
-  .item6{
-    margin: 0 auto;
-    img{
-      @include size(20%, 20%);
-      // padding: 3%;
-      position: relative;
-      left:10%;
-      top: -270px;
-    }
-  }
-
-  @media (max-width:768px){
-    .item{
-      display: flex;
-      justify-content: center;
-      img{
-        position: unset;
-        left: unset;
-        top: unset;
-        margin: 20px auto;
-      }
-    }
-    .item6{
-      img{
-        left: 3%;
-        top: -20px;
-        margin: 20px auto;
-      }
-    }
+  // 內文
+  .right_of_inner_text{
+    font-size: 20px;
   }
 }
