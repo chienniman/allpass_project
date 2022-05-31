@@ -15,7 +15,7 @@
         ice:'',
         // 推薦結果
         predicted_button:true,
-        predicted_question:true,
+        predicted_question:false,
         predicted_result:false,
         predicted_result_show:false,
         predicted_result_text:'恭喜您，您可以前往歐巴斯購買想要的飲品，祝您一天順心，心想事成',
@@ -49,251 +49,251 @@
               hot: false,
               ice: true,
             },
-            // {
-            //   teaname: "蔓越莓綠茶",
-            //   EngName: "Cranberry Green Tea",
-            //   price: "80",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "蜂蜜檸檬綠茶",
-            //   EngName: "Lemon Honry Green Tea",
-            //   price: "90",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "奶茶",
-            //   EngName: "Milk Tea",
-            //   price: "80",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "香草奶茶",
-            //   EngName: "Vanilla Milk Tea",
-            //   price: "80",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "榛果奶茶",
-            //   EngName: "Hazelnut Milk Tea",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "焦糖奶茶",
-            //   EngName: "Caramel Milk Tea",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "太妃糖奶茶",
-            //   EngName: "Toffee Milk Tea",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "鮮榨檸檬汁",
-            //   EngName: "Lemon Juice",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "鮮榨柳橙汁",
-            //   EngName: "Orange Juice",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "鮮榨葡萄柚汁",
-            //   EngName: "Grapefruit Juice",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "鮮榨奇異果汁",
-            //   EngName: "Kiwi Juice",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "當季水果牛奶",
-            //   EngName: "Fruit Milk",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "鮮榨鮮榨蔬果汁",
-            //   EngName: "Seasonal Fruit and Vegetable Juice",
-            //   price: "100",
-            //   hot: false,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "皇家伯爵茶",
-            //   EngName: "Earl Grey Tea",
-            //   price: "120",
-            //   hot: true,
-            //   ice: false,
-            // },
-            // {
-            //   teaname: "有機洋甘菊茶",
-            //   EngName: "Organic Chamomile Tisane",
-            //   price: "120",
-            //   hot: true,
-            //   ice: false,
-            // },
-            // {
-            //   teaname: "百箱花樣水果茶",
-            //   EngName: "Gerry Tea Pasionfruit Natural",
-            //   price: "120",
-            //   hot: true,
-            //   ice: false,
-            // },
-            // {
-            //   teaname: "萊茵野莓水果茶",
-            //   EngName: "Strawberry Popcorn Mild Fruit ",
-            //   price: "150",
-            //   hot: true,
-            //   ice: false,
-            // },
-            // {
-            //   teaname: "原味鮮奶",
-            //   EngName: "Original Milk",
-            //   price: "80",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "香草鮮奶",
-            //   EngName: "Vanilla Flavor Milk",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "榛果鮮奶",
-            //   EngName: "Hazelnut Flavor Milk",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "焦糖鮮奶",
-            //   EngName: "Caramel Flavor Milk",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "太妃糖鮮奶",
-            //   EngName: "Toffee Flavor Milk",
-            //   price: "90",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "阿薩姆紅茶牛奶",
-            //   EngName: "Assam Black Tea Latte",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "宇治抹茶牛奶",
-            //   EngName: "Matcha",
-            //   price: "120",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "巧克力歐蕾",
-            //   EngName: "Original Chocolate Milk",
-            //   price: "120",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "美式黑咖啡",
-            //   EngName: "American Coffee",
-            //   price: "60",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "原味拿鐵",
-            //   EngName: "Original Latte",
-            //   price: "80",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "香草拿鐵",
-            //   EngName: "Vanilla Flavor Latte",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "榛果拿鐵",
-            //   EngName: "Hazelnut Flavor Latte",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "焦糖拿鐵",
-            //   EngName: "Caramel Flavor Latte",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "太妃糖拿鐵",
-            //   EngName: "Toffee Flavor Latte",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "摩卡咖啡",
-            //   EngName: "Mocha",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "卡布奇諾咖啡",
-            //   EngName: "Cappuccino",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "焦糖瑪奇朵咖啡",
-            //   EngName: "Caramel Macchiato",
-            //   price: "100",
-            //   hot: true,
-            //   ice: true,
-            // },
-            // {
-            //   teaname: "宇治抹茶拿鐵咖啡",
-            //   EngName: "Coffee Matcha Latte",
-            //   price: "120",
-            //   hot: true,
-            //   ice: true,
-            // },
+            {
+              teaname: "蔓越莓綠茶",
+              EngName: "Cranberry Green Tea",
+              price: "80",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "蜂蜜檸檬綠茶",
+              EngName: "Lemon Honry Green Tea",
+              price: "90",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "奶茶",
+              EngName: "Milk Tea",
+              price: "80",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "香草奶茶",
+              EngName: "Vanilla Milk Tea",
+              price: "80",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "榛果奶茶",
+              EngName: "Hazelnut Milk Tea",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "焦糖奶茶",
+              EngName: "Caramel Milk Tea",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "太妃糖奶茶",
+              EngName: "Toffee Milk Tea",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "鮮榨檸檬汁",
+              EngName: "Lemon Juice",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "鮮榨柳橙汁",
+              EngName: "Orange Juice",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "鮮榨葡萄柚汁",
+              EngName: "Grapefruit Juice",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "鮮榨奇異果汁",
+              EngName: "Kiwi Juice",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "當季水果牛奶",
+              EngName: "Fruit Milk",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "鮮榨鮮榨蔬果汁",
+              EngName: "Seasonal Fruit and Vegetable Juice",
+              price: "100",
+              hot: false,
+              ice: true,
+            },
+            {
+              teaname: "皇家伯爵茶",
+              EngName: "Earl Grey Tea",
+              price: "120",
+              hot: true,
+              ice: false,
+            },
+            {
+              teaname: "有機洋甘菊茶",
+              EngName: "Organic Chamomile Tisane",
+              price: "120",
+              hot: true,
+              ice: false,
+            },
+            {
+              teaname: "百箱花樣水果茶",
+              EngName: "Gerry Tea Pasionfruit Natural",
+              price: "120",
+              hot: true,
+              ice: false,
+            },
+            {
+              teaname: "萊茵野莓水果茶",
+              EngName: "Strawberry Popcorn Mild Fruit ",
+              price: "150",
+              hot: true,
+              ice: false,
+            },
+            {
+              teaname: "原味鮮奶",
+              EngName: "Original Milk",
+              price: "80",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "香草鮮奶",
+              EngName: "Vanilla Flavor Milk",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "榛果鮮奶",
+              EngName: "Hazelnut Flavor Milk",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "焦糖鮮奶",
+              EngName: "Caramel Flavor Milk",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "太妃糖鮮奶",
+              EngName: "Toffee Flavor Milk",
+              price: "90",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "阿薩姆紅茶牛奶",
+              EngName: "Assam Black Tea Latte",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "宇治抹茶牛奶",
+              EngName: "Matcha",
+              price: "120",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "巧克力歐蕾",
+              EngName: "Original Chocolate Milk",
+              price: "120",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "美式黑咖啡",
+              EngName: "American Coffee",
+              price: "60",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "原味拿鐵",
+              EngName: "Original Latte",
+              price: "80",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "香草拿鐵",
+              EngName: "Vanilla Flavor Latte",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "榛果拿鐵",
+              EngName: "Hazelnut Flavor Latte",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "焦糖拿鐵",
+              EngName: "Caramel Flavor Latte",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "太妃糖拿鐵",
+              EngName: "Toffee Flavor Latte",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "摩卡咖啡",
+              EngName: "Mocha",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "卡布奇諾咖啡",
+              EngName: "Cappuccino",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "焦糖瑪奇朵咖啡",
+              EngName: "Caramel Macchiato",
+              price: "100",
+              hot: true,
+              ice: true,
+            },
+            {
+              teaname: "宇治抹茶拿鐵咖啡",
+              EngName: "Coffee Matcha Latte",
+              price: "120",
+              hot: true,
+              ice: true,
+            },
           ],
         // 調茶飲
         FreshTea: [
@@ -648,11 +648,12 @@
       },
       // 取得與顯示推薦飲品
       get_recommended_drink:function(){
+        // 複製資料
+        let recommended_arr=Object.assign([],this.recommended_menu);
         // 隨機取得全部菜單中的一筆資料
-        var recommended_arr=this.recommended_menu
-        recommended_arr=this.allMenu;
-        var rand = Math.floor(Math.random()*recommended_arr.length);
-        var random_drink=recommended_arr[rand];
+        let rand = Math.floor(Math.random()*recommended_arr.length);
+        let random_drink=Object.assign({},recommended_arr[rand]);
+        // 設推薦飲品
         this.teaname=random_drink.teaname;
         this.EngName=random_drink.EngName;
         this.price=random_drink.price;
@@ -664,13 +665,15 @@
         // 取得推薦飲品
         this.get_recommended_drink();
         // 將推薦結果文字清空
-        this. predicted_result_text='';
+        this.predicted_result_text='';
         // 重新顯示預測問題
         this.predicted_question=true;
       },
       // 預測結果
       // 結果是準確的
       result_is_accurate:function(){
+        this.hot=false;
+        this.ice=false;
         this.predicted_result_show=true;
         this. predicted_result_text='恭喜您，您可以立即前往歐巴斯購買飲品，祝您一天順心，事事都能All PASS';
         this.predicted_result=true;
@@ -679,19 +682,21 @@
       },
       // 結果並不是準確的
       result_is_not_accurate:function(){
+        this.hot=false;
+        this.ice=false;
         this.predicted_result_show=true;
         this.predicted_question=false;
         this.predicted_button=true;
-        this.predicted_result_text='真的很抱歉，請點選推薦按鈕再嘗試預測一次'
+        this.predicted_result_text='請點選推薦按鈕讓我們再為您推薦一次';
         // 將推薦項目移至待刪除品項
         this.item_to_be_delete=this.teaname;
+        // 檢查推薦清單是否為空
         this.check_recommend_menu_zero();
         // 觸發將不準確項目從清單中移除的函式
         this.delete_wrong_item_in_recommend_array();
       },
       // 將不準確的結果從推薦清單中移除
       delete_wrong_item_in_recommend_array:function(){
-      // 本次推薦結果非顧客所要
       var item_to_be_delete_teaname=this.teaname;
       var arr=this.recommended_menu;
       // 遍歷整個清單篩選掉該筆資料
@@ -701,14 +706,18 @@
         }
       });
       this.recommended_menu=arr;
-      console.log(typeof(arr),arr);
       },
-      // 當推薦清單已經沒有更多飲品了
+      // 檢查推薦清單是否為空
       check_recommend_menu_zero:function(){
         var left_recommended_items=this.recommended_menu.length;
         // 當推薦清單內數量為0
-        if(left_recommended_items==0){
+        if(left_recommended_items==1){
+          // 將推薦功能隱藏，引導訪客前往餐點頁面
+          this.predicted_button=false;
           this.predicted_question=false;
+          this.recommended_drink_show=false;
+          this.predicted_result=true;
+          this.recommended_drink_show=true;
           this.predicted_result_text="目前沒有更多飲品可以推薦囉!要不要前往歐巴斯的餐點區瀏覽美味的菜品呢"
         }
       }
