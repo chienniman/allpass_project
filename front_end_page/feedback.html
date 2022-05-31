@@ -88,7 +88,7 @@
 
     <main id="main">
       
-      <form action="" method="">
+      <form action="" method="" id="form">
         
         <div class="form_title text_color">意見回饋</div>
         <div class="form_text text_color">
@@ -110,6 +110,7 @@
             </select>
             
             <input id="feedback_name" type="text" name="name" placeholder="聯絡人姓名 *" required>
+            <small></small>
             <select id="feedback_name" name="salutation">
               <option value="1" >先生</option>
               <option value="2" >小姐</option>
@@ -117,12 +118,15 @@
             </select>
             
             <input id="feedback_phone" type="number" name="phone" placeholder="聯絡電話 *" required>
+            <small></small>
             <input id="feedback_email" type="text" name="email" placeholder="Email">
+            <small></small>
           </div>
           <textarea id="feedback_suggestion" name="suggestion" id="" cols="30" rows="10" placeholder="建議內容 *" required></textarea>
-          
+          <small></small>
+
           <div class="btn">
-            <button id="add_feedback_btn" type="button" style="cursor:pointer;">送出</button>
+            <button id="add_feedback_btn" type="submit" style="cursor:pointer;">送出</button>
           </div>
         </div>
       </form>
@@ -164,5 +168,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../JS/feedback.js"></script>
   </body>
 </html>
