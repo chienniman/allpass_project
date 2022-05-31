@@ -46,6 +46,25 @@ function all_Meals(){
     var Meals_project = document.querySelector('.box-inner');
     Meals_project.innerHTML = "";
     Meals_project.innerHTML =`
+            <div class="Remark">
+                <div>
+                    <div style="color:#f95223; font-size: 20px;font-weight: 600;">※供餐時間表：</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">1.早餐－08：00～10：30</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">2.沙拉－08：00～19：30</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">3.點心－08：00～19：30</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">4.精選下午茶－14：00～16：30</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">5.興大學生特惠餐－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※學生特惠餐限興大學生憑學生證選用<br>一證一套。</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">6.日式咖哩－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">7.異國米飯－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                    <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">8.義大利麵－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                </div>
+            </div>
+
+
             <div class="project">
                 <div class="project-card">
                     <div class="project-name">全部餐點</div>
@@ -307,6 +326,25 @@ function meal() {
     if (Meals == "1") {
         // 全部餐點
         Meals_project.innerHTML =`
+            <div class="Remark">
+                <div>
+                    <div style="color:#f95223; font-size: 18px;font-weight: 600;">※供餐時間表：</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">1.早餐－08：00～10：30</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">2.沙拉－08：00～19：30</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">3.點心－08：00～19：30</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">4.精選下午茶－14：00～16：30</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">5.興大學生特惠餐－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※學生特惠餐限興大學生憑學生證選用<br>一證一套。</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">6.日式咖哩－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">7.異國米飯－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                    <div style="color:black; font-size: 18px;font-weight: 600;padding-top:0.5rem;">8.義大利麵－11：00～19：30</div>
+                    <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+                </div>
+            </div>
+
+
             <div class="project">
                 <div class="project-card">
                     <div class="project-name">全部餐點</div>
