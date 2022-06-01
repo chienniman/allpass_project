@@ -416,7 +416,7 @@ body {
 }
 
 ul {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 ul .top_photo {
