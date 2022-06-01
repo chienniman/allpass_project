@@ -1,22 +1,4 @@
 
-
-
-
-// form.addEventListener('submit', (event) => {
-//     // stop form submission
-//     event.preventDefault();
-// });
-
-// function validateForm(){
-//     // var x = document.forms["name"]["phone"]["suggestion"].value;
-//     var x = document.forms.elements.name.value;
-//     if (x == null || x == ""){
-       
-//         return false;
-//     }
-// }
-
-
 // show a message with a type of the input
 function showMessage(input, message, type) {
 	// get the small element and set the message
@@ -69,15 +51,18 @@ const SUGGESTION_REQUIRED = "請輸入建議內容";
 form.addEventListener("submit", function (event) {
 	// stop form submission
 	event.preventDefault();
-
 	// validate the form
 	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
 	let emailValid = validateEmail(form.elements["email"], EMAIL_INVALID);
     let suggestionValid = hasValue(form.elements["suggestion"], SUGGESTION_REQUIRED);
 	// if valid, submit the form.
 	if (nameValid && emailValid && suggestionValid) {
-		alert("Demo only. No form was posted.");
+		swal({
+			title: "已經成功收到您寶貴的意見回復",
+			text: "感謝您",
+			icon: "success",
+			button: "關閉",
+		  });
 	}
-    
 });
 
