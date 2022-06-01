@@ -58,7 +58,7 @@
             },
             {
               teaname: "蜂蜜檸檬綠茶",
-              EngName: "Lemon Honry Green Tea",
+              EngName: "Lemon Honey Green Tea",
               price: "90",
               hot: false,
               ice: true,
