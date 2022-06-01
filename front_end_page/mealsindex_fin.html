@@ -26,16 +26,29 @@
         <!-- 1440px 選單列 -->
         <ul class="nav_content_pc">
           <li>
-            <a href="#">品牌故事</a>
+            <a href="story.html">
+              品牌故事
+            </a>
           </li>
           <li>
-            <a href="#">商品介紹</a>
+            <a href="mealsindex_fin.html">
+              餐點介紹
+            </a>
           </li>
           <li>
-            <a href="#">門市據點</a>
+            <a href="drink_list.html">
+              飲品介紹
+            </a>
           </li>
           <li>
-            <a href="#">意見回饋</a>
+            <a href="position_map.html">
+              門市據點
+            </a>
+          </li>
+          <li>
+            <a href="feedback.html">
+              意見回饋
+            </a>
           </li>
         </ul>
       </div>
@@ -87,10 +100,8 @@
       </div>
     </nav>
   </header>
-
   <main id="main">
     <!-- 佔位子用，到時候拿來挖洞 -->
-
     <section id="Meals-box">
       <div class="Meals-list">
         <div class="list-btn" onclick="all_Meals();">全部餐點<br>All</div>
@@ -122,8 +133,6 @@
             </select>
           </form>
         </div>
-
-
         <!-- 餐點項目顯示區 -->
         <div class="box-inner">
           <div class="Remark">
@@ -143,7 +152,6 @@
               <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
           </div>
-
           <!-- 餐點項目區 -->
           <div class="project">
             <!-- 餐點項目卡片-->
@@ -160,11 +168,8 @@
                       </div>
                     </div>
               @endforeach
-
           </div>
-
         </div>
-
       </div>
     </section>
     <!-- <section id="test">
@@ -172,8 +177,6 @@
         </div>
       </section> -->
   </main>
-
-
   <footer id="footer">
     <div class="footer_content">
       <div class="logo_and_links">
@@ -212,7 +215,6 @@
       </div>
     </div>
   </footer>
-
   <script>
     //全部餐點
     function all_Meals() {
@@ -236,8 +238,6 @@
                 <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
               </div>
             </div>
-
-
             <div class="project">
               @foreach ($mealTag[0]->meal as $item)
                     <div class="project-card">
@@ -254,10 +254,7 @@
               @endforeach
             </div>
         `;
-
     }
-
-
     //早餐
     function breakfast() {
       var Meals_project = document.querySelector('.box-inner');
@@ -266,7 +263,6 @@
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～10：30</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[1]->meal as $item)
                     <div class="project-card">
@@ -284,18 +280,14 @@
             </div>
         `;
     }
-
-
     //沙拉
     function salad() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[2]->meal as $item)
                     <div class="project-card">
@@ -312,10 +304,7 @@
               @endforeach
             </div>
         `;
-
     }
-
-
     //點心
     function dessert() {
 
@@ -325,7 +314,6 @@
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[3]->meal as $item)
                     <div class="project-card">
@@ -343,17 +331,14 @@
             </div>
         `;
     }
-
     //精選下午茶
     function afternoon_tea() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間14：00～16：30</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[4]->meal as $item)
                     <div class="project-card">
@@ -371,10 +356,8 @@
             </div>
         `;
     }
-
     //中興大學學生特餐
     function nchu_student() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
@@ -382,7 +365,6 @@
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px;">※限興大學生憑學生證選用<br>一證一套。</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[5]->meal as $item)
                     <div class="project-card">
@@ -400,10 +382,8 @@
             </div>
         `;
     }
-
     //日式咖哩
     function curry_jp() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
@@ -429,10 +409,8 @@
             </div>
         `;
     }
-
     //異國米飯
     function exotic_rice() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
@@ -458,10 +436,8 @@
             </div>
         `;
     }
-
     //義大利麵
     function pasta() {
-
       var Meals_project = document.querySelector('.box-inner');
       Meals_project.innerHTML = "";
       Meals_project.innerHTML = `
@@ -469,7 +445,6 @@
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[8]->meal as $item)
                     <div class="project-card">
@@ -487,9 +462,6 @@
             </div>
         `;
     }
-
-
-
     // RWD出現的餐點選擇列表
     function meal() {
       var Meals = document.querySelector('#meals').value;
@@ -516,7 +488,6 @@
                 <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
               </div>
             </div>
-
             <div class="project">
               @foreach ($mealTag[0]->meal as $item)
                     <div class="project-card">
