@@ -3,7 +3,11 @@
 }
 
 .bg-main {
-  background: #f4f2e6;
+  background: #f4f2e6 !important;
+}
+
+.bg-main-hover:hover {
+  background: #ebdada;
 }
 
 .hot {
@@ -393,20 +397,26 @@ body, .company_and_phone {
   height: 200px;
 }
 
+@media (max-width: 830px) {
+  #recommend {
+    height: 300px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #recommend {
+    height: 400px;
+  }
+}
+
 #recommend .alert {
   width: 100%;
   height: 50%;
 }
 
-#recommend .recommend-btn {
-  width: 100%;
-  border: 2px solid #6accbf;
-  background: #F4BD72;
-  color: white;
-  height: 50px;
-}
-
 #recommend .recommend_drink {
+  position: relative;
   background: #d1e7dd;
   width: 80%;
   height: 100px;
@@ -414,6 +424,37 @@ body, .company_and_phone {
 
 #recommend .recommend_drink .question {
   width: 100%;
+}
+
+#recommend .recommend_drink .recommend-btn {
+  position: absolute;
+  right: 0px;
+  top: 90%;
+  width: 200px;
+  background: #F4BD72;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+}
+
+@media (max-width: 576px) {
+  #recommend .recommend_drink .recommend-btn {
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+#recommend .recommend_drink .recommended-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #recommend .recommend_drink .recommended-text {
+    white-space: normal;
+  }
 }
 
 #recommend .predicted_results {

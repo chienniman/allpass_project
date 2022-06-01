@@ -109,21 +109,21 @@
               <button class="btn btn-all dropdown-toggle ice-hot-selector w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 照冷熱選擇
               </button>
-              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1" >
-                <li class="d-flex justify-content-around align-items-center">
-                  <button class="btn btn-ic d-flex" @click="showColdDrink()">
+              <ul class="dropdown-menu w-100 bg-main" aria-labelledby="dropdownMenuButton1" >
+                <li class="d-flex justify-content-around align-items-center bg-main-hover" @click="showColdDrink()">
+                  <button class="btn btn-ic d-flex">
                     選擇冷飲{{cold_length}}
                   </button>
                   <div class="cold rounded-circle"></div>      
                 </li>
-                <li class="d-flex justify-content-around align-items-center">
-                  <button class="btn btn-hot d-flex justify-content-around"@click="showHotDrink()">
+                <li class="d-flex justify-content-around align-items-center bg-main-hover" @click="showHotDrink()">
+                  <button class="btn btn-hot d-flex justify-content-around">
                      選擇熱飲{{hot_length}}
                   </button>  
                   <div class="hot rounded-circle"></div>
                 </li>
-                <li class="d-flex justify-content-around align-items-center">
-                  <button class="btn btn-ice-hot d-flex" @click="show_cold_and_Hot_Drink()">
+                <li class="d-flex justify-content-around align-items-center bg-main-hover" @click="show_cold_and_Hot_Drink()">
+                  <button class="btn btn-ice-hot d-flex">
                     冷熱皆可{{cold_and_hot_length}}
                   </button>
                   <div class="d-flex">
@@ -161,33 +161,33 @@
                 class="btn btn-secondary dropdown-toggle w-100 pe-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 全部飲品{{all_length}}
                 </button>
-                <ul class="dropdown-menu w-100 ps-3 pe-3" aria-labelledby="dropdownMenuButton1">
-                  <li>
+                <ul class="dropdown-menu w-100 ps-3 pe-3 bg-main" aria-labelledby="dropdownMenuButton1">
+                  <li class="bg-main-hover">
                     <button class="btn btn-all btn-lg me-3 mb-3 mt-3 w-100" @click="showAllMenu()">
                       全部飲品{{all_length}}
                     </button>
                   </li>
-                  <li>
+                  <li class="bg-main-hover">
                     <button class="btn btn-fresh-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showFreshTea()">
                       調茶飲{{fresh_length}}
                     </button>
                   </li>
-                  <li>
+                  <li class="bg-main-hover">
                     <button class="btn btn-handpicked-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showHandPick_Tea()">
                       嚴選茶品{{HandPick_Tea_length}}
                     </button>
                   </li>
-                  <li>
+                  <li class="bg-main-hover">
                     <button class="btn btn-milk-juice btn-lg me-3 mb-3 mt-3 w-100" @click="showMilk_and_Juice()">
                       牛奶跟果汁{{Milk_and_Juice_length}}
                     </button>
                   </li>
-                  <li>
+                  <li class="bg-main-hover">
                     <button class="btn btn-tea-latte btn-lg me-3 mb-3 mt-3 w-100" @click="showTeaLatte()">
                       茶拿鐵{{TeaLatte_length}}
                     </button>
                   </li>
-                  <li>
+                  <li class="bg-main-hover">
                     <button class="btn btn-coffee-latte btn-lg me-3 w-100" @click="showCoffee_and_Latte()">
                       咖啡跟拿鐵{{Coffee_and_Latte_length}}
                     </button> 
@@ -220,13 +220,13 @@
           </div>
         </div>
         <section id="recommend">
-          <div class="alert alert-success border-0 m-0 text-center" role="alert">
+          <div class="alert alert-success border-0 text-center" role="alert">
             <p class="fs-3">
               想不到應該喝什麼嗎?請讓歐巴斯為您推薦一杯好喝的飲品吧! 
             </p>   
           </div>
-          <div class="d-flex justify-content-center mt-5">
-            <div class="recommend_drink row align-items-center">
+          <div class="d-flex justify-content-center mt-5 pt-3">
+            <div class="recommend_drink row">
               <div v-if="recommended_drink_show" class="col-10">
                 <div class="d-flex flex-wrap align-items-center">
                   <div>
@@ -236,7 +236,9 @@
                       </span>
                       <br>
                       <div class="d-flex">
-                        {{teaname}}&nbsp&nbsp&nbsp{{EngName}}&nbsp&nbsp&nbsp{{price}}元
+                        <div>
+                          <p class="recommended-text">{{teaname}}&nbsp&nbsp&nbsp{{EngName}}&nbsp&nbsp&nbsp{{price}}元</p>
+                        </div>
                         <div class="col-2 d-flex pb-3 ps-3">
                           <div v-if="hot==true">
                             <div class="hot rounded-circle"></div>
@@ -249,13 +251,13 @@
                     </h3>
                   </div>
                   <div class="d-flex question">
-                    <span v-if="predicted_question">是您想要喝的飲品嗎?</span>
+                    <span v-if="predicted_question" class="d-block pe-3">是您想要喝的飲品嗎?</span>
                     <div v-if="predicted_question" class="predicted_results d-flex justify-content-around">
-                      <span @click="result_is_accurate()">
+                      <span @click="result_is_accurate()" class="d-block pe-3 ps-3">
                         <!-- <a href="https://www.flaticon.com/free-icons/right" title="right icons">Right icons created by kliwir art - Flaticon</a> -->
                         <img src="../pics/drink_list_icons/correct.png" alt="正確">
                       </span>
-                      <span @click="result_is_not_accurate()">
+                      <span @click="result_is_not_accurate()" class="d-block pe-3">
                         <!-- <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect - Flaticon</a> -->
                         <img src="../pics/drink_list_icons/remove.png" alt="錯誤">
                       </span>  
@@ -263,18 +265,16 @@
                     <div v-if="predicted_result_show" class="result_text">
                       {{predicted_result_text}}
                       <br>
-                      <a class="go_to_allpass_meals" v-if="predicted_result" href="./mealsindex_fin.html">
-                        或是前往歐巴斯餐點區逛逛
+                      <a class="go_to_allpass_meals text-nowrap" v-if="predicted_result" href="./mealsindex_fin.html">
+                        前往歐巴斯餐點區逛逛
                       </a>
                     </div>
                   </div>  
                 </div>    
               </div>
-              <div class="col-2">
-                <button v-if="predicted_button" @click="show_recommended_drink()" class="recommend-btn rounded-pill">
-                  推薦飲品
-                </button>
-              </div>
+              <button v-if="predicted_button" @click="show_recommended_drink()" class="recommend-btn rounded-pill border-0">
+                推薦飲品
+              </button>
             </div>  
           </div>
         </section>
