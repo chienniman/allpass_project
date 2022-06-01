@@ -103,104 +103,94 @@
     </header>
     <main id="main"> 
       <div id="vue_menu">
-        <div class="btns row">
+        <div class="btns row justify-content-center">
           <div class="col-md-3 d-flex flex-column justify-content-center align-items-center mt-5">
             <div class="dropdown w-100 d-flex justify-content-center">
-              <button class="btn btn-all dropdown-toggle ice-hot-selector" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-all dropdown-toggle ice-hot-selector w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 照冷熱選擇
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
-                <li class="d-flex justify-content-center">
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1" >
+                <li class="d-flex justify-content-around align-items-center">
                   <button class="btn btn-ic d-flex" @click="showColdDrink()">
                     選擇冷飲{{cold_length}}
-                    <div class="cold rounded-circle"></div>
-                  </button>      
+                  </button>
+                  <div class="cold rounded-circle"></div>      
                 </li>
-                <li class="d-flex justify-content-center">
-                  <button class="btn btn-hot d-flex justify-content-between"@click="showHotDrink()">
+                <li class="d-flex justify-content-around align-items-center">
+                  <button class="btn btn-hot d-flex justify-content-around"@click="showHotDrink()">
                      選擇熱飲{{hot_length}}
-                     <div class="hot rounded-circle"></div>
                   </button>  
+                  <div class="hot rounded-circle"></div>
                 </li>
-                <li class="d-flex justify-content-center">
+                <li class="d-flex justify-content-around align-items-center">
                   <button class="btn btn-ice-hot d-flex" @click="show_cold_and_Hot_Drink()">
                     冷熱皆可{{cold_and_hot_length}}
+                  </button>
+                  <div class="d-flex">
                     <div class="cold rounded-circle"></div>
                     <div class="hot rounded-circle"></div>
-                  </button>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="btn_groups col-md-9 row d-flex justify-content-center align-items-center">
-            <div class="d-none d-md-flex justify-content-around flex-wrap">
-              <button class="btn btn-all btn-lg me-3 col-4 mb-3 mt-3" @click="showAllMenu()">
+            <div class="btn_selector d-none d-md-flex justify-content-around flex-wrap">
+              <button class="btn btn-all me-3" @click="showAllMenu()">
                 全部飲品{{all_length}}
               </button>
-              <button class="btn btn-fresh-tea btn-lg me-3 col-4 mb-3 mt-3" @click="showFreshTea()">
+              <button class="btn btn-fresh-tea me-3" @click="showFreshTea()">
                 調茶飲{{fresh_length}}
               </button>
-              <button class="btn btn-handpicked-tea btn-lg me-3 col-4 mb-3 mt-3" @click="showHandPick_Tea()">
+              <button class="btn btn-handpicked-tea  me-3" @click="showHandPick_Tea()">
                 嚴選茶品{{HandPick_Tea_length}}
               </button>
-              <button class="btn btn-milk-juice btn-lg me-3 col-4 mb-3 mt-3" @click="showMilk_and_Juice()">
+              <button class="btn btn-milk-juice me-3" @click="showMilk_and_Juice()">
                 牛奶跟果汁{{Milk_and_Juice_length}}
               </button>
-              <button class="btn btn-tea-latte btn-lg me-3 col-4 mb-3 mt-3" @click="showTeaLatte()">
+              <button class="btn btn-tea-latte me-3" @click="showTeaLatte()">
                 茶拿鐵{{TeaLatte_length}}
               </button>
-              <button class="btn btn-coffee-latte btn-lg me-3 col-4" @click="showCoffee_and_Latte()">
+              <button class="btn btn-coffee-latte me-3" @click="showCoffee_and_Latte()">
                 咖啡跟拿鐵{{Coffee_and_Latte_length}}
               </button>  
             </div>
-            <div class="d-flex justify-content-center d-md-none ">
-              <div class="dropdown  mt-3 mb-3 ps-3 w-100">
+            <div class="d-flex justify-content-center d-md-none">
+              <div class="dropdown  mt-3 mb-3 w-100 bg-main">
                 <button @click="showAllMenu()"  
-                class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                class="btn btn-secondary dropdown-toggle w-100 pe-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 全部飲品{{all_length}}
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu w-100 ps-3 pe-3" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <a href="#" class="dropdown-item">
-                      <button class="btn btn-all btn-lg me-3 mb-3 mt-3 w-100" @click="showAllMenu()">
-                        全部飲品{{all_length}}
-                      </button>
-                    </a>
+                    <button class="btn btn-all btn-lg me-3 mb-3 mt-3 w-100" @click="showAllMenu()">
+                      全部飲品{{all_length}}
+                    </button>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item">
-                      <button class="btn btn-fresh-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showFreshTea()">
-                        調茶飲{{fresh_length}}
-                      </button>
-                    </a>
+                    <button class="btn btn-fresh-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showFreshTea()">
+                      調茶飲{{fresh_length}}
+                    </button>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item">
-                      <button class="btn btn-handpicked-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showHandPick_Tea()">
-                        嚴選茶品{{HandPick_Tea_length}}
-                      </button>
-                    </a>
+                    <button class="btn btn-handpicked-tea btn-lg me-3 mb-3 mt-3 w-100" @click="showHandPick_Tea()">
+                      嚴選茶品{{HandPick_Tea_length}}
+                    </button>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item">
-                      <button class="btn btn-milk-juice btn-lg me-3 mb-3 mt-3 w-100" @click="showMilk_and_Juice()">
-                        牛奶跟果汁{{Milk_and_Juice_length}}
-                      </button>
-                    </a>
+                    <button class="btn btn-milk-juice btn-lg me-3 mb-3 mt-3 w-100" @click="showMilk_and_Juice()">
+                      牛奶跟果汁{{Milk_and_Juice_length}}
+                    </button>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item" >
-                      <button class="btn btn-tea-latte btn-lg me-3 mb-3 mt-3 w-100" @click="showTeaLatte()">
-                        茶拿鐵{{TeaLatte_length}}
-                      </button>
-                    </a>
+                    <button class="btn btn-tea-latte btn-lg me-3 mb-3 mt-3 w-100" @click="showTeaLatte()">
+                      茶拿鐵{{TeaLatte_length}}
+                    </button>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item">
-                      <button class="btn btn-coffee-latte btn-lg me-3 w-100" @click="showCoffee_and_Latte()">
-                        咖啡跟拿鐵{{Coffee_and_Latte_length}}
-                      </button> 
-                    </a>
+                    <button class="btn btn-coffee-latte btn-lg me-3 w-100" @click="showCoffee_and_Latte()">
+                      咖啡跟拿鐵{{Coffee_and_Latte_length}}
+                    </button> 
                   </li>
                 </ul>
               </div>  

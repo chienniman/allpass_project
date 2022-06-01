@@ -2,6 +2,22 @@
   width: 100%;
 }
 
+.bg-main {
+  background: #f4f2e6;
+}
+
+.hot {
+  background: brown;
+  width: 20px;
+  height: 20px;
+}
+
+.cold {
+  background: #39cff5;
+  width: 20px;
+  height: 20px;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -332,6 +348,12 @@ body, .company_and_phone {
 #vue_menu .dropdown .btn-all {
   background: #4572A3;
   color: white;
+}
+
+#vue_menu .btn_groups .btn {
+  width: 170px;
+  height: 50px;
+  margin: 10px 0;
 }
 
 #vue_menu .btn_groups .btn-all {
