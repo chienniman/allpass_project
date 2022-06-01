@@ -295,7 +295,7 @@ body, .company_and_phone {
 }
 
 #vue_menu .card, #vue_menu .card-body {
-  border-radius: 60px !important;
+  border-radius: 10px !important;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
