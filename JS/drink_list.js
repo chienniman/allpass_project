@@ -58,7 +58,7 @@
             },
             {
               teaname: "蜂蜜檸檬綠茶",
-              EngName: "Lemon Honry Green Tea",
+              EngName: "Lemon Honey Green Tea",
               price: "90",
               hot: false,
               ice: true,
@@ -687,7 +687,7 @@
         this.predicted_result_show=true;
         this.predicted_question=false;
         this.predicted_button=true;
-        this.predicted_result_text='請點選推薦按鈕讓我們再為您推薦一次';
+        this.predicted_result_text='請點選推薦按鈕讓我們為您推薦';
         // 將推薦項目移至待刪除品項
         this.item_to_be_delete=this.teaname;
         // 檢查推薦清單是否為空
