@@ -2,17 +2,13 @@
   const viewmodel = Vue.createApp({
     data() {
       return {
-        // 頁面顯示
-        tempMenu: [],
-        // 推薦飲品顯示清單
-        recommended_menu:[],
-        recommended_drink_show:true,
         // 推薦飲品
         teaname:'',
         EngName:'',
         price:'',
         hot:'',
         ice:'',
+        recommended_drink_show:true,
         // 推薦結果
         predicted_button:true,
         predicted_question:false,
@@ -20,6 +16,10 @@
         predicted_result_show:false,
         predicted_result_text:'恭喜您，您可以前往歐巴斯購買想要的飲品，祝您一天順心，心想事成',
         item_to_be_delete:'',
+        // 頁面顯示
+        tempMenu: [],
+        // 推薦飲品顯示清單
+        recommended_menu:[],
         allMenu: [
             {
               teaname: "阿薩姆紅茶",
