@@ -226,7 +226,8 @@ body {
   width: 100%;
 }
 
-#header .burger_link .list .commodity-box, #header .burger_link .list .commodity_test_box {
+#header .burger_link .list .commodity-box,
+#header .burger_link .list .commodity_test_box {
   text-align: end;
   width: 100%;
   height: 0;
@@ -252,6 +253,294 @@ body {
 #header .burger_link .list .commodity-list:hover {
   text-shadow: 0 5px 5px black;
   margin: 10px;
+}
+
+#main #news {
+  width: 80%;
+  height: unset;
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#main #news .news_title {
+  color: #2fbfac;
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  #main #news .news_title {
+    font-size: 35px;
+  }
+}
+
+#main #news .swiper {
+  width: 100%;
+  height: 80%;
+}
+
+#main #news .swiper::before {
+  width: 100%;
+  height: 3px;
+  content: "";
+  display: block;
+  background-color: #ffad3d;
+  margin: 20px auto;
+}
+
+#main #news .swiper-slide {
+  height: 500px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #main #news .swiper-slide {
+    height: 300px;
+  }
+}
+
+#main #news .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main #news #noticias {
+  padding: 5% 0;
+}
+
+#main #news #noticias .noticia {
+  padding: 1% 0;
+}
+
+#main #news #noticias .noticia .title_of_noticia {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #main #news #noticias .noticia .title_of_noticia {
+    font-size: 20px;
+  }
+}
+
+#main #news #noticias .noticia .time {
+  font-size: 20px;
+  color: #6c6c6c;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 768px) {
+  #main #news #noticias .noticia .time {
+    font-size: 15px;
+  }
+}
+
+#main #meal_card {
+  width: 80%;
+  height: unset;
+  margin: 0 auto;
+}
+
+#main #meal_card .meal_swiper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../pics/index/Group 399.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+#main #meal_card .meal_swiper .meal_title {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+#main #meal_card .meal_swiper .meal_text {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 20px auto;
+}
+
+#main #meal_card .meal_swiper .meal_text::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  display: block;
+  background-color: #000000;
+  margin: 20px auto;
+}
+
+#main #meal_card .meal_swiper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+#main #meal_card .meal_swiper .card .swiper-wrapper {
+  width: 80%;
+  height: 50%;
+}
+
+#main #meal_card .meal_swiper .card .swiper-wrapper .swiper-slide {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main #meal_card .meal_swiper .card .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+#main #meal_card .meal_swiper .card .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper2 {
+  width: 50%;
+  height: 100%;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 {
+  width: 50%;
+  height: 100%;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide {
+  background-color: #f4f2e6;
+  border-radius: 8%;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide img {
+  width: 90%;
+  height: 60%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide .text {
+  padding: 7% 0;
+  font-size: 24px;
+}
+
+#main #evaluation-area {
+  padding: 50px 150px;
+  background-color: #F4F2E6;
+}
+
+#main #evaluation-area .evaluation {
+  border-bottom: 3px solid #E3952A;
+  margin-bottom: 30px;
+}
+
+#main #evaluation-area .evaluation h2 {
+  color: #2FBFAC;
+  font-weight: 800;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+#main #evaluation-area .evaluation p {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+#main #evaluation-area #swiper .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper {
+  padding-bottom: 60px;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #868686;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-pagination span {
+  width: 20px;
+  height: 20px;
+  background-color: #FEAD3B;
+  margin: 0px 5px;
 }
 
 #footer {
@@ -424,233 +713,5 @@ body {
   right: 10px;
   top: 100px;
   position: absolute;
-}
-
-main {
-  padding: 100px 0;
-}
-
-main #news {
-  width: 80%;
-  height: unset;
-  position: relative;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-
-main #news .news_title {
-  color: #2FBFAC;
-  font-size: 48px;
-}
-
-@media (max-width: 768px) {
-  main #news .news_title {
-    font-size: 35px;
-  }
-}
-
-main #news .swiper {
-  width: 100%;
-  height: 80%;
-}
-
-main #news .swiper::before {
-  width: 100%;
-  height: 3px;
-  content: "";
-  display: block;
-  background-color: #FFAD3D;
-  margin: 20px auto;
-}
-
-main #news .swiper-slide {
-  height: 500px;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  main #news .swiper-slide {
-    height: 300px;
-  }
-}
-
-main #news .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main #news #noticias {
-  padding: 5% 0;
-}
-
-main #news #noticias .noticia {
-  padding: 1% 0;
-}
-
-main #news #noticias .noticia .title_of_noticia {
-  font-size: 24px;
-}
-
-@media (max-width: 768px) {
-  main #news #noticias .noticia .title_of_noticia {
-    font-size: 20px;
-  }
-}
-
-main #news #noticias .noticia .time {
-  font-size: 20px;
-  color: #6C6C6C;
-  letter-spacing: 10px;
-}
-
-@media (max-width: 768px) {
-  main #news #noticias .noticia .time {
-    font-size: 15px;
-  }
-}
-
-main #meal_card {
-  width: 80%;
-  height: unset;
-  margin: 0 auto;
-}
-
-main #meal_card .meal_swiper {
-  width: 100%;
-  height: 100%;
-  background-image: url("../pics/index/Group 399.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: 0 auto;
-  padding: 5%;
-}
-
-main #meal_card .meal_swiper .meal_title {
-  font-size: 48px;
-  color: #FFFFFF;
-}
-
-main #meal_card .meal_swiper .meal_text {
-  font-size: 24px;
-  color: #FFFFFF;
-  margin: 20px auto;
-}
-
-main #meal_card .meal_swiper .meal_text::after {
-  width: 100%;
-  height: 2px;
-  content: "";
-  display: block;
-  background-color: #000000;
-  margin: 20px auto;
-}
-
-main #meal_card .meal_swiper .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-}
-
-main #meal_card .meal_swiper .card .swiper-wrapper {
-  width: 80%;
-  height: 50%;
-}
-
-main #meal_card .meal_swiper .card .swiper-wrapper .swiper-slide {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-main #meal_card .meal_swiper .card .swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
-main #meal_card .meal_swiper .card .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main #meal_card .meal_swiper .card .mySwiper2 {
-  width: 50%;
-  height: 100%;
-}
-
-main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main #meal_card .meal_swiper .card .mySwiper1 {
-  width: 50%;
-  height: 100%;
-}
-
-main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide {
-  background-color: #F4F2E6;
-  border-radius: 8%;
-  padding-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide img {
-  width: 90%;
-  height: 60%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide .text {
-  padding: 7% 0;
-  font-size: 24px;
 }
 /*# sourceMappingURL=index.css.map */
