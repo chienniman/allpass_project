@@ -426,6 +426,10 @@ body {
   position: absolute;
 }
 
+main {
+  padding: 100px 0;
+}
+
 main #news {
   width: 80%;
   height: unset;
@@ -434,7 +438,7 @@ main #news {
   font-size: 14px;
   color: #000;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 100px;
 }
 
 main #news .news_title {

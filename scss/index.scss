@@ -303,6 +303,7 @@ body {
 
 // ----------------MAIN------------------
 main{
+  padding: 100px 0;
   // 最新消息
   #news{
     @include size(80%, unset);
@@ -311,8 +312,7 @@ main{
     font-size: 14px;
     color: #000;
     margin: 0 auto;
-    padding: 0;
-
+    padding-top: 100px;
     .news_title{
         color: #2FBFAC;
         font-size: 48px;
