@@ -2,25 +2,26 @@
   const viewmodel = Vue.createApp({
     data() {
       return {
-        // 頁面顯示
-        tempMenu: [],
-        // 推薦飲品顯示
-        recommended_menu:[],
-        recommended_drink_show:true,
         // 推薦飲品
         teaname:'',
         EngName:'',
         price:'',
         hot:'',
         ice:'',
+        recommended_drink_show:true,
         // 推薦結果
         predicted_button:true,
-        predicted_question:true,
+        predicted_question:false,
         predicted_result:false,
         predicted_result_show:false,
         predicted_result_text:'恭喜您，您可以前往歐巴斯購買想要的飲品，祝您一天順心，心想事成',
+        item_to_be_delete:'',
+        // 頁面顯示
+        tempMenu: [],
+        // 推薦飲品顯示清單
+        recommended_menu:[],
         allMenu: [
-          {
+            {
               teaname: "阿薩姆紅茶",
               EngName: "Assam Black Tea",
               price: "60",
@@ -57,7 +58,7 @@
             },
             {
               teaname: "蜂蜜檸檬綠茶",
-              EngName: "Lemon Honry Green Tea",
+              EngName: "Lemon Honey Green Tea",
               price: "90",
               hot: false,
               ice: true,
@@ -647,28 +648,32 @@
       },
       // 取得與顯示推薦飲品
       get_recommended_drink:function(){
+        // 複製資料
+        let recommended_arr=Object.assign([],this.recommended_menu);
         // 隨機取得全部菜單中的一筆資料
-        var recommended_arr=this.recommended_menu
-        recommended_arr=this.allMenu;
-        var rand = Math.floor(Math.random()*recommended_arr.length);
-        var random_drink=recommended_arr[rand];
+        let rand = Math.floor(Math.random()*recommended_arr.length);
+        let random_drink=Object.assign({},recommended_arr[rand]);
+        // 設推薦飲品
         this.teaname=random_drink.teaname;
         this.EngName=random_drink.EngName;
         this.price=random_drink.price;
         this.hot=random_drink.hot;
         this.ice=random_drink.ice;
+        this.recommended_arr=recommended_arr
       },
       show_recommended_drink:function(){
         // 取得推薦飲品
         this.get_recommended_drink();
         // 將推薦結果文字清空
-        this. predicted_result_text='';
+        this.predicted_result_text='';
         // 重新顯示預測問題
         this.predicted_question=true;
       },
       // 預測結果
       // 結果是準確的
       result_is_accurate:function(){
+        this.hot=false;
+        this.ice=false;
         this.predicted_result_show=true;
         this. predicted_result_text='恭喜您，您可以立即前往歐巴斯購買飲品，祝您一天順心，事事都能All PASS';
         this.predicted_result=true;
@@ -677,10 +682,44 @@
       },
       // 結果並不是準確的
       result_is_not_accurate:function(){
+        this.hot=false;
+        this.ice=false;
         this.predicted_result_show=true;
         this.predicted_question=false;
         this.predicted_button=true;
-        this.predicted_result_text='真的很抱歉，請點選推薦按鈕再嘗試預測一次'
+        this.predicted_result_text='請點選推薦按鈕讓我們為您推薦';
+        // 將推薦項目移至待刪除品項
+        this.item_to_be_delete=this.teaname;
+        // 檢查推薦清單是否為空
+        this.check_recommend_menu_zero();
+        // 觸發將不準確項目從清單中移除的函式
+        this.delete_wrong_item_in_recommend_array();
+      },
+      // 將不準確的結果從推薦清單中移除
+      delete_wrong_item_in_recommend_array:function(){
+      var item_to_be_delete_teaname=this.teaname;
+      var arr=this.recommended_menu;
+      // 遍歷整個清單篩選掉該筆資料
+      arr.forEach(function(item,index){
+        if(item.teaname==item_to_be_delete_teaname){
+          arr.splice(index,1);
+        }
+      });
+      this.recommended_menu=arr;
+      },
+      // 檢查推薦清單是否為空
+      check_recommend_menu_zero:function(){
+        var left_recommended_items=this.recommended_menu.length;
+        // 當推薦清單內數量為0
+        if(left_recommended_items==1){
+          // 將推薦功能隱藏，引導訪客前往餐點頁面
+          this.predicted_button=false;
+          this.predicted_question=false;
+          this.recommended_drink_show=false;
+          this.predicted_result=true;
+          this.recommended_drink_show=true;
+          this.predicted_result_text="目前沒有更多飲品可以推薦囉!要不要前往歐巴斯的餐點區瀏覽美味的菜品呢"
+        }
       }
     },
     //當vue物件綁定時要執行
@@ -699,6 +738,8 @@
       // 確保第一次載入時是顯示全部的菜單
       this.showAllMenu();
       this.get_recommended_drink();
+      // 將全部菜單載入待推薦清單
+      this.recommended_menu=[...this.allMenu];
     },
   });
   //掛載vue物件

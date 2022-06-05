@@ -291,7 +291,7 @@ body {
 // 品牌故事
 ul{
   // 修 data-aos="fade-left" bug
-  overflow-x: hidden;
+  overflow: hidden;
   .top_photo{
     background-image: url("../pics/balls/Group\ 387.png");
     background-repeat: no-repeat;
@@ -357,6 +357,8 @@ ul{
           .inner_text{
             font-size: 25px;
             padding: 2% 2% 0 2%;
+            line-height: 40px;
+            text-align: start;
             @media(max-width:990px){
               font-size: 15px;
             }
@@ -394,6 +396,41 @@ ul{
         top: -130px;
       }
     }
+    .title{
+      @include size(30%, 30%);
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      font-size: 50px;
+      color: #FFFBF2;
+      text-align: end;
+      @media(max-width:950px){
+        font-size: 40px;
+      } 
+      @media(max-width:768px){
+        text-align: center;
+      } 
+      .text{
+        font-size: 24px;
+        text-align: end;
+        padding-top: 5%;
+        line-height: 40px;
+        @media(max-width:950px){
+          font-size: 20px;
+        }
+        @media(max-width:768px){
+          text-align: center;
+        } 
+      }
+    }
+    .title::before{
+      @include size(100%, 2px);
+      content:" ";
+      display:block;
+      border-top: 2px solid #FFFBF2;
+      padding-bottom: 5%;
+    }
+
   }
   .item2{
     margin: 0 auto;
@@ -414,6 +451,38 @@ ul{
       position: relative;
       left:-2%;
       top: -270px;
+    }
+    .type{
+      @include size(30%, unset);
+      position: absolute;
+      bottom: 60%;
+      left: 10%;
+      font-size: 24px;
+      line-height: 40px;
+      color: #F4F2E6;
+      text-align: start;
+      @media(max-width:950px){
+        bottom: 67%;
+        left: 13%;
+        font-size: 20px;
+      }
+    }
+    .type::before{
+      content:" 餐點種類";
+      display:block;
+      font-size: 50px;
+      text-align: start;
+      padding-bottom: 5%;
+      @media(max-width:950px){
+        font-size: 40px;
+      }
+    }
+    .type::after{
+      content:" ";
+      display:block;
+      font-size: 24px;
+      border-bottom: 2px solid #F4F2E6;
+      padding-top: 5%;
     }
   }
   .item4{
@@ -456,6 +525,9 @@ ul{
         left: unset;
         top: unset;
         margin: 20px auto;
+      }
+      .content{
+        text-align: center;
       }
     }
     .item6{

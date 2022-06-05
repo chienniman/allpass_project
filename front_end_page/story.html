@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AOS 品牌故事</title>
+    <title>品牌故事</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/story.css">
@@ -14,7 +14,7 @@
     <header id="header">
       <nav>
         <!-- 導覽列上的店家logo -->
-        <a href="#" class="nav_logo">
+        <a href="./index.html" class="nav_logo">
           <div class="logo">
             <img class="logo_img" src="../pics/logo.jpeg" alt="" />
           </div>
@@ -24,16 +24,24 @@
           <!-- 1440px 選單列 -->
           <ul class="nav_content_pc">
             <li>
-              <a href="#">品牌故事</a>
+              <a href="story.html">
+                品牌故事
+              </a>
             </li>
             <li>
-              <a href="#">商品介紹</a>
+              <a href="mealsindex原始.html">
+                餐點介紹
+              </a>
             </li>
             <li>
-              <a href="#">門市據點</a>
+              <a href="drink_list.html">
+                飲品介紹
+              </a>
             </li>
             <li>
-              <a href="#">意見回饋</a>
+              <a href="position_map.html">
+                門市據點
+              </a>
             </li>
           </ul>
         </div>
@@ -49,7 +57,7 @@
             <input type="checkbox" id="burger" hidden/>
             <ul class="list">
               <li>
-                <a href="##" class="list-project">品牌故事</a>
+                <a href="./story.html" class="list-project">品牌故事</a>
               </li>
               <li>
                 <label class="list-project" for="commodity" for="commodity">
@@ -58,17 +66,17 @@
                 <input type="checkbox" id="commodity" hidden />
                 <ul class="commodity-box">
                   <li>
-                    <a class="commodity-list" href="#">
+                    <a href="./drink_list.html" class="commodity-list">
                         <p>
-                            飲料列表
+                          飲料列表
                         </p>
                         <img src="../pics/drink_icon.png" alt="drink_icon" style="width: 60px;">
                     </a>
                   </li>  
                   <li>
-                    <a class="commodity-list" href="#">
+                    <a href="./mealsindex原始.html" class="commodity-list" >
                         <p>
-                            餐點列表
+                          餐點列表
                         </p>
                         <img src="../pics/meal_icon.png" alt="meal_icon" style="width: 60px;">
                     </a>
@@ -76,17 +84,16 @@
                 </ul>
               </li>
               <li>
-                <a class="list-project">門市據點</a>
+                <a href="./position_map.html" class="list-project" >門市據點</a>
               </li>
               <li>
-                <a href="##" class="list-project">意見回饋</a>
+                <a href="./feedback.html" class="list-project">意見回饋</a>
               </li>
             </ul>
         </div>
       </nav>
     </header>
-
-    <main>
+    <main id="main">
       <section>
         <ul>
           <div class="top_photo"></div>
@@ -96,23 +103,24 @@
               <div class="title">歐巴斯的誕生</div>
               <ul>
                 <li id="show" class="show" onclick="show1()">
-                  Lorem ipsum adipisicing elit.
+                  源起
                   <span id="hide1" class="inner_text" style="display: none;"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio blanditiis ex, ipsa ea unde?
+                    由中興大學土木學系的校友，以興友企業的身分，奪得興大進善亭的經營權
                   </span>
                 </li>
                 
                 <li class="show" onclick="show2()">
-                  Lorem ipsum adipisicing elit.
+                  構想
                   <span id="hide2" class="inner_text hide" style="display: none;"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio blanditiis ex, ipsa ea unde?
+                    聊起大學生活，最重要的三學分則是，愛情、課業、社團。 </br>
+                    其重要性彷彿沒有修滿就不是所謂的大學生，但最後還是認為所有學生最希望的是考試能夠ALL PASS，因此店名就採用「歐巴斯」這個名字了
                   </span>
                 </li>
                 
                 <li class="show" onclick="show3()">
-                  Lorem ipsum adipisicing elit.
+                 宗旨
                   <span id="hide3" class="inner_text hide" style="display: none;"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio blanditiis ex, ipsa ea unde?
+                    想為學校設立一個獨特地標，就像一說到東海，大家就會聯想到教堂一樣。另外的宗旨則是：一、美化校園，二、師生健康，三、回饋學校
                   </span>
                 </li>
               </ul>
@@ -120,27 +128,56 @@
           </li>
           <!-- 經營型態 -->
           <li class="item item1" data-aos="fade-right">
-            <img src="../pics/balls/ball_2.png" alt="">
+            <div class="content">
+              <div>
+                <img src="../pics/balls/ball_2.png" alt="經營型態">
+              </div>
+              <div class="title">經營宗旨
+                <div class="text">
+                  美化校園</br>
+                  師生健康</br>
+                  回饋學校</br>
+                </div>
+              </div>
+              <!-- <div class="text">
+                美化校園</br>
+                師生健康</br>
+                回饋學校</br>
+              </div> -->
+            </div>
           </li>
           <!-- 圖 -->
           <li class="item item2" data-aos="fade-left">
-            <img src="../pics/balls/ball_3.png" alt="">
+            <img src="../pics/balls/ball_3.png" alt="餐點">
           </li>
           <!-- 餐點種類 -->
           <li class="item item3" data-aos="fade-right">
-            <img src="../pics/balls/ball_4.png" alt="">
+            <div class="content">
+              <div>
+                <img src="../pics/balls/ball_4.png" alt="經營型態">
+              </div>
+              <div class="type">
+                精選早餐</br>
+                精選下午茶</br>
+                日式咖哩飯</br>
+                異國米飯料理</br>
+                義大利麵</br>
+                沙拉</br>
+                點心</br>
+              </div>
+            </div>
           </li>
           <!-- 圖 -->
           <li class="item item4" data-aos="fade-right">
-            <img src="../pics/balls//ball_3.png" alt="">
+            <img src="../pics/balls//ball_3.png" alt="餐點">
           </li>
           
           <li class="item item5" data-aos="fade-left">
-            <img src="../pics/balls/ball_3.png" alt="">
+            <img src="../pics/balls/ball_3.png" alt="餐點">
           </li>
 
           <li class="item6" data-aos="fade-right">
-            <img src="../pics/balls/ball_6.png" alt="">
+            <img src="../pics/balls/ball_6.png" alt="圖片">
           </li>
 
         </ul>
@@ -159,26 +196,25 @@
       <div class="item" data-aos="flip-right">10</div>
       <div class="item" data-aos="flip-left">11</div> -->
     </main>
-
     <footer id="footer">
       <div class="footer_content">
         <div class="logo_and_links">
-          <a href="#" class="logo">
+          <a href="./index.html" class="logo">
             <img src="../pics/logo.png" alt="logo" />
           </a href="#">
           <div class="links_group_wrapper">
             <ul class="links_group">
               <li class="link">
-                <a href="#"> 顧客權益 </a>
+                <a href="./right_of_customer.html"> 顧客權益 </a>
               </li>
               <li class="link">
                 <a href="#"> 聯絡我們 </a>
               </li>
               <li class="link">
-                <a href="#"> 意見回饋 </a>
+                <a href="./feedback.html"> 意見回饋 </a>
               </li>
               <li class="link">
-                <a href="#"> FB粉絲專頁 </a>
+                <a href="https://www.facebook.com/nchuallpass/" target="_blank"> FB粉絲專頁 </a>
               </li>
             </ul>
           </div>
@@ -197,77 +233,8 @@
         </div>
       </div>
     </footer>
-
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200,
-      });
-    </script>
-
-    <script>
-      function show1() {
-        var hide = document.getElementById('hide1');
-        
-        if (hide.style.display === 'none') {
-          hide.style.display = 'block';
-        }
-        else {
-          hide.style.display = 'none';
-        }
-      } 
-
-      function show2() {
-        var hide = document.getElementById('hide2');
-        
-        if (hide.style.display === 'none') {
-          hide.style.display = 'block';
-        }
-        else {
-          hide.style.display = 'none';
-        }
-      } 
-
-      function show3() {
-        var hide = document.getElementById('hide3');
-        
-        if (hide.style.display === 'none') {
-          hide.style.display = 'block';
-        }
-        else {
-          hide.style.display = 'none';
-        }
-      } 
-
-      // jquery
-      // $("li .show").click(function () {
-      //   $(this).parent(".show").find("li").show();
-      //   $(this).hide(".hide");
-      // });
-      
-    </script> 
-
-    <!-- <script>
-      var hide = [] = document.querySelectorAll('.hide');
-      
-      window.onload = function () {
-        for (i = 0; i < hide.length; i++) {
-          hide[i].addEventListener("click",show.bind(this));
-        }
-      }
-
-      function show(){
-        for ( i = 0; i < hide.length; i++) {
-
-          if (hide[i].style.display == 'none') {
-            hide[i].style.display = 'block';
-          }
-          else {
-            hide[i].style.display = 'none';
-          }
-        }
-      }      
-    </script> -->
+    <script src="../JS/story.js"></script>
   </body>
 </html>

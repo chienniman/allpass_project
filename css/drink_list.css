@@ -1,3 +1,27 @@
+.w-100 {
+  width: 100%;
+}
+
+.bg-main {
+  background: #f4f2e6 !important;
+}
+
+.bg-main-hover:hover {
+  background: #ebdada;
+}
+
+.hot {
+  background: brown;
+  width: 20px;
+  height: 20px;
+}
+
+.cold {
+  background: #39cff5;
+  width: 20px;
+  height: 20px;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -275,7 +299,7 @@ body, .company_and_phone {
 }
 
 #vue_menu .card, #vue_menu .card-body {
-  border-radius: 60px !important;
+  border-radius: 10px !important;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -283,8 +307,38 @@ body, .company_and_phone {
   margin: 0 20%;
 }
 
+@media (max-width: 1024px) {
+  #vue_menu .card {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  #vue_menu .card {
+    margin: 0 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  #vue_menu .card {
+    margin: 0 5%;
+  }
+}
+
 #vue_menu .item {
   padding: 10px 15%;
+}
+
+@media (max-width: 768px) {
+  #vue_menu .item {
+    padding: 10px 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  #vue_menu .item {
+    padding: 10px 5%;
+  }
 }
 
 #vue_menu .item:hover {
@@ -298,6 +352,12 @@ body, .company_and_phone {
 #vue_menu .dropdown .btn-all {
   background: #4572A3;
   color: white;
+}
+
+#vue_menu .btn_groups .btn {
+  width: 170px;
+  height: 50px;
+  margin: 10px 0;
 }
 
 #vue_menu .btn_groups .btn-all {
@@ -331,9 +391,29 @@ body, .company_and_phone {
 }
 
 #recommend {
+  padding-bottom: 250px;
   margin: 0 5%;
   background: #d1e7dd;
   height: 200px;
+}
+
+@media (max-width: 830px) {
+  #recommend {
+    height: 300px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #recommend {
+    height: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  #recommend {
+    height: 600px;
+  }
 }
 
 #recommend .alert {
@@ -341,21 +421,72 @@ body, .company_and_phone {
   height: 50%;
 }
 
-#recommend .recommend-btn {
-  border: 2px solid #6accbf;
-  background: #F4BD72;
-  color: white;
-  height: 50px;
-}
-
 #recommend .recommend_drink {
+  position: relative;
   background: #d1e7dd;
   width: 80%;
   height: 100px;
 }
 
+#recommend .recommend_drink .question {
+  width: 100%;
+}
+
+#recommend .recommend_drink .recommend-btn {
+  position: absolute;
+  right: 0px;
+  top: 90%;
+  width: 200px;
+  background: #F4BD72;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+}
+
+@media (max-width: 576px) {
+  #recommend .recommend_drink .recommend-btn {
+    left: 50%;
+    top: 200px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 375px) {
+  #recommend .recommend_drink .recommend-btn {
+    left: 50%;
+    top: 300px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+#recommend .recommend_drink .recommended-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #recommend .recommend_drink .recommended-text {
+    white-space: normal;
+  }
+}
+
+#recommend .predicted_results {
+  width: 60px;
+}
+
 #recommend .predicted_results span {
   cursor: pointer;
+}
+
+#recommend .result_text {
+  color: #0f5132;
+}
+
+#recommend .go_to_allpass_meals {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
 }
 
 #footer {
