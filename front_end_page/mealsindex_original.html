@@ -89,7 +89,6 @@
   </header>
 
   <main id="main">
-    <!-- 佔位子用，到時候拿來挖洞 -->
 
     <section id="Meals-box">
       <div class="Meals-list">
@@ -105,26 +104,24 @@
       </div>
 
       <div class="Meals-project-box">
+        <!-- RWD出現的餐點選擇列表 -->
         <div class="Meals-list-RWD">
-          <form action="">
-            <!-- required使用者一定要選擇 -->
-            <select name="" id="meals" required onclick="meal(this)">
-              <option selected disabled style="display:none;">請選擇餐點分類</option>
-              <option value="1">全部餐點</option>
-              <option value="2">精選早餐／附飲品</option>
-              <option value="3">沙拉／附飲品</option>
-              <option value="4">點心</option>
-              <option value="5">精選下午茶／附飲品</option>
-              <option value="6">中興大學學生優惠特餐</option>
-              <option value="7">日式咖哩飯/附飲品</option>
-              <option value="8">異國米飯料理/附飲品</option>
-              <option value="9">義大利麵／附飲品</option>
-            </select>
-          </form>
+          <!-- required使用者一定要選擇 -->
+          <select name="" id="meals" required onclick="meal(this)">
+            <option selected disabled style="display:none;">請選擇餐點分類</option>
+            <option value="1">全部餐點</option>
+            <option value="2">精選早餐／附飲品</option>
+            <option value="3">沙拉／附飲品</option>
+            <option value="4">點心</option>
+            <option value="5">精選下午茶／附飲品</option>
+            <option value="6">中興大學學生優惠特餐</option>
+            <option value="7">日式咖哩飯/附飲品</option>
+            <option value="8">異國米飯料理/附飲品</option>
+            <option value="9">義大利麵／附飲品</option>
+          </select>
         </div>
 
-
-        <!-- 餐點項目顯示區 -->
+        <!-- 大調整DIV結構與JS內容使選單this範圍改變並生效 -->
         <div class="box-inner">
           <div class="Remark">
             <div>
@@ -134,71 +131,29 @@
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">3.點心－08：00～19：30</div>
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">4.精選下午茶－14：00～16：30</div>
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">5.興大學生特惠餐－11：00～19：30</div>
-              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※學生特惠餐限興大學生憑學生證選用<br>一證一套。</div>
+              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">
+                ※學生特惠餐限興大學生憑學生證選用<br>一證一套。</div>
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">6.日式咖哩－11：00～19：30</div>
-              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem; text-align: center;">
+                ※升級套餐可享有濃湯與手工麵包一份</div>
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">7.異國米飯－11：00～19：30</div>
-              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">
+                ※升級套餐可享有濃湯與手工麵包一份</div>
               <div style="color:black; font-size: 20px;font-weight: 600;padding-top:0.5rem;">8.義大利麵－11：00～19：30</div>
-              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">※升級套餐可享有濃湯與手工麵包一份</div>
+              <div style="color:#f95223; font-size: 12px;font-weight: 600;padding-top:0.5rem;text-align: center;">
+                ※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
           </div>
+        </div>
 
-          <!-- 餐點項目區 -->
-          <div class="project">
-            <!-- 餐點項目卡片-->
-            <div class="project-card">
-              <div class="project-name">精選早餐</div>
-              <div>
-                <img
-                  src="https://www.seriouseats.com/thmb/uGGwEqPZf7PzhES1ZCAqHLgCbG8=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg"
-                  alt="..." width="100%">
-              </div>
-              <div class="project-body">
-                <p class="project-title">DOGG</p>
-                <p class="project-text">備註</p>
-                <p class="project-price">200元</p>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-name">精選早餐</div>
-              <div>
-                <img
-                  src="https://www.seriouseats.com/thmb/uGGwEqPZf7PzhES1ZCAqHLgCbG8=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg"
-                  alt="..." width="100%">
-              </div>
-              <div class="project-body">
-                <p class="project-title">DOGG</p>
-                <p class="project-text">備註</p>
-                <p class="project-price">200元</p>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-name">精選早餐</div>
-              <div>
-                <img
-                  src="https://www.seriouseats.com/thmb/uGGwEqPZf7PzhES1ZCAqHLgCbG8=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__05__Anova-Steak-Guide-Sous-Vide-Photos15-beauty-159b7038c56a4e7685b57f478ca3e4c8.jpg"
-                  alt="..." width="100%">
-              </div>
-              <div class="project-body">
-                <p class="project-title">DOGG</p>
-                <p class="project-text">備註</p>
-                <p class="project-price">200元</p>
-              </div>
-            </div>
-
-          </div>
+        <!-- 餐點項目卡片顯示區 -->
+        <div class="project">
 
         </div>
 
       </div>
     </section>
-    <!-- <section id="test">
-        <div style="height: 5000px">
-        </div>
-      </section> -->
+
   </main>
 
 
@@ -242,38 +197,19 @@
   </footer>
 
   <script src="../js/mealsindex.js"></script>
-  <!-- <script>
-    function meal() {
-      var Meals = document.querySelector('#meals').value;
-      var Meals_project = document.querySelector('.box-inner');
-      Meals_project.innerHTML = ''
-      if (Meals == "1") {
-        Meals_project.innerHTML +=
-            `
-            <div class="card">
-            這是1
-            </div>
-             `
-        
-      } else if(Meals == "2"){
-        Meals_project.innerHTML +=
-            `
-            <div class="card">
-            這是2
-            </div>
-             `
-        
-      } else if(Meals == "3"){
-        Meals_project.innerHTML +=
-            `
-            <div class="card">
-            這是3
-            </div>
-             `
-      }
 
-    }
-  </script> -->
+  <!-- 本網頁使用圖片來源與作者 -->
+  <!-- <a href="https://www.flaticon.com/free-icons/wellington" title="wellington icons">Wellington icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icons">Ramen icons created by justicon - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/cake" title="cake icons">Cake icons created by monkik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/salad" title="salad icons">Salad icons created by Roundicons - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/lunch" title="lunch icons">Lunch icons created by photo3idea_studio - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/curry" title="curry icons">Curry icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons">Food and restaurant icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/pasta" title="pasta icons">Pasta icons created by Flat-icons-com - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/fries" title="fries icons">Fries icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/breakfast" title="breakfast icons">Breakfast icons created by Freepik - Flaticon</a> -->
+  
 </body>
 
 </html>

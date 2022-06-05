@@ -32,7 +32,9 @@ body {
   background-position:top;
   background-size: 100%;
   // background: $primary_color;
+
 }
+
 // 頁首固定在視窗上方
 #header {
   z-index: 100;
@@ -204,6 +206,7 @@ body {
       // display: flex;
       // flex-direction: column;
       // align-items: center;
+      // 菜單淡色背景設定
       background-color: rgba(255, 255, 255, 0.500);
       border-radius: 0px 0px 50px 50px;
       padding: 50px 25px;
@@ -232,7 +235,7 @@ body {
           color: white;
           background-color: #2FBFAC;
           border:5px solid white;
-          border-radius: 20px;
+          border-radius: 10px;
           outline: 5px solid #2FBFAC;
           // outline-offset:5px;
         }
@@ -262,7 +265,7 @@ body {
           color: white;
           background-color: #FFAD3D;
           border:5px solid white;
-          border-radius: 20px;
+          border-radius: 10px;
           outline: 5px solid #FFAD3D;
           // outline-offset:5px;
         }
@@ -304,6 +307,7 @@ body {
             cursor: pointer;
 
             &:hover{
+              background-color: #fdfee0;
               border: 5px solid #FFAD3D;
               color: #f95223;
               letter-spacing:5px;
@@ -331,7 +335,7 @@ body {
           border: 5px solid #FFAD3D;
           padding: 30px 20px;
           margin-top: 20px;
-          border-radius: 50px;
+          border-radius: 20px;
           // background-image: url('../pics/ALLPASS字.png');
           // background-position: center;
           // background-repeat: no-repeat;
@@ -343,75 +347,94 @@ body {
           flex-direction: column;
           text-align: start;
         }
+      }
 
-        .project{
+      .project{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        padding: 3% 0px;
+        // 餐點項目卡片
+        .project-card{
+          // flex: 0 0 auto;
+          width: 30%;
+          min-width: 0;
+          padding: 0.5rem;
           display: flex;
-          flex-wrap: wrap;
-          justify-content:space-between;
-          padding: 3% 0px;
-          // 餐點項目卡片
-          .project-card{
-            // flex: 0 0 auto;
-            width: 30%;
-            min-width: 0;
-            padding: 0.5rem;
+          flex-direction: column;
+          word-wrap: break-word;
+          background-color: #ffffff;
+          margin-bottom: 50px;
+    
+          // 设置元素的背景（背景图片或颜色）是否延伸到边框、内边距盒子、内容盒子下面。
+          background-clip: border-box;
+          border: 1px solid rgba(0,0,0,.125);
+          border-radius: 0.25rem;
+
+          // 項目種類
+          .project-name{
+            background-color: #FFAD3D;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 6px;
+          }
+          .img-box{
+            text-align: center;
+          }
+          .project-body {
+            flex: 1 1 auto;
             display: flex;
             flex-direction: column;
-            word-wrap: break-word;
-            background-color: #ffffff;
-            margin-bottom: 50px;
-      
-            // 设置元素的背景（背景图片或颜色）是否延伸到边框、内边距盒子、内容盒子下面。
-            background-clip: border-box;
-            border: 1px solid rgba(0,0,0,.125);
-            border-radius: 0.25rem;
+            justify-content: center;
+            align-items: center;
 
-            // 項目種類
-            .project-name{
-              background-color: #cf9d58;
-              // height: 30px;
-              // text-align: 200px;
-              // line-height: 30px;
-              font-size: 20px;
-              color: white;
+            // 項目名稱
+            .project-title{
+              background-color: #fdffcf;
+              width: 100%;
+              padding: 10px;
+              font-size: 18px;
               font-weight: 600;
-              text-align: center;
-              padding: 10px 0px;
-            }
-            .project-body {
-              flex: 1 1 auto;
-              padding: 0.5rem;
+              color: #ffa221;
+              // 使文字完美至中，故設 flex和text-align: center
               display: flex;
-              flex-direction: column;
               justify-content: center;
               align-items: center;
-
-              // 項目名稱
-              .project-title{
-                padding: 5px 0px;
-                font-size: 25px;
-                font-weight: 600;
-                color: #ff9500;
-              }
-
-              // 備註和價格
-              .project-text{
-                padding: 5px 0px;
-                font-size: 1rem;
-              }
-              .project-price{
-                padding: 5px 0px;
-                font-size: 20px;
-                font-weight: 600;
-              }
+              text-align: center;
+              
+              border-radius: 0px 0px 10px 10px;
+              margin-bottom: 5px;
             }
 
-            @media(max-width:1100px){
-              width: 40%;
+            // 備註和價格
+            .project-text{
+              padding: 5px 10px;
+              font-size: 1rem;
+              font-weight: 600;
+              // 讓所有備註靠邊對齊，故設寬100%
+              width: 100%;
+              // 對齊備註與價格，故設flex: 1;
+              flex: 1;
+              color: #363B45;
+              // line-height:5px
             }
-            @media(max-width:910px){
-              width: 45%;
+            .project-price{
+              padding: 10px 0px;
+              font-size: 18px;
+              font-weight: 600;
+              color: #f95223;
+              // 對齊備註與價格，故設flex: 1;
+              flex: 1;
             }
+          }
+
+          @media(max-width:1100px){
+            width: 40%;
+          }
+          @media(max-width:910px){
+            width: 45%;
           }
         }
       }
