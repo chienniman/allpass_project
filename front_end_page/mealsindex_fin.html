@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,6 @@
   <!-- 模板 css檔案 -->
   <link rel="stylesheet" href="../css/mealsindex.css" />
 </head>
-
 <body>
   <header id="header">
     <nav>
@@ -108,8 +106,6 @@
         <div class="list-btn-two" onclick="exotic_rice();">異國米飯料理/附飲品<br>Exotic Rice</div>
         <div class="list-btn" onclick="pasta();">義大利麵／附飲品<br>Spaghetti</div>
       </div>
-      
-
       <div class="Meals-project-box">
         <!-- RWD出現的餐點選擇列表 -->
         <div class="Meals-list-RWD">
@@ -149,9 +145,7 @@
             </div>
           </div>
           <!-- 餐點項目區 -->
-          
         </div>
-
         <div class="project">
           <!-- 餐點項目卡片-->
           @foreach ($mealTag[0]->meal as $item)
@@ -168,12 +162,9 @@
                     </div>
                   </div>
           @endforeach
-
         </div>
-        
       </div>
     </section>
-
   </main>
   <footer id="footer">
     <div class="footer_content">
@@ -265,14 +256,11 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～10：30</div>
             </div>
             `;
-
-
       project.innerHTML =`
               @foreach ($mealTag[1]->meal as $item)
                     <div class="project-card">
@@ -296,14 +284,11 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
             `;
-
-
       project.innerHTML = `
               @foreach ($mealTag[2]->meal as $item)
                     <div class="project-card">
@@ -323,19 +308,15 @@
     }
     //點心
     function dessert() {
-
       var Meals_project = document.querySelector('.box-inner');
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
             `;
-
-      
       project.innerHTML =`
               @foreach ($mealTag[3]->meal as $item)
                     <div class="project-card">
@@ -359,14 +340,11 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間14：00～16：30</div>
             </div>
             `;
-
-
       project.innerHTML =`
               @foreach ($mealTag[4]->meal as $item)
                     <div class="project-card">
@@ -390,15 +368,12 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px;">※限興大學生憑學生證選用<br>一證一套。</div>
             </div>
             `;
-
-
       project.innerHTML =`
               @foreach ($mealTag[5]->meal as $item)
                     <div class="project-card">
@@ -422,15 +397,12 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-
-
       project.innerHTML =`
               @foreach ($mealTag[6]->meal as $item)
                     <div class="project-card">
@@ -454,14 +426,12 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-
       project.innerHTML =`
               @foreach ($mealTag[7]->meal as $item)
                     <div class="project-card">
@@ -485,14 +455,12 @@
       var project = document.querySelector('.project');
       Meals_project.innerHTML = "";
       project.innerHTML = "";
-
       Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-
       project.innerHTML =`
               @foreach ($mealTag[8]->meal as $item)
                     <div class="project-card">
@@ -518,10 +486,8 @@
 
       if (Meals == "1") {
         // 全部餐點
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
             <div class="Remark">
               <div>
@@ -541,7 +507,6 @@
               </div>
             </div>
             `;
-
         project.innerHTML =`
               @foreach ($mealTag[0]->meal as $item)
                     <div class="project-card">
@@ -558,21 +523,15 @@
                     </div>
               @endforeach
         `;
-
       } else if (Meals == "2") {
         // 早餐
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
-
         Meals_project.innerHTML = `
           <div class="Remark">
               <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～10：30</div>
           </div>
           `;
-
-
         project.innerHTML =`
               @foreach ($mealTag[1]->meal as $item)
                     <div class="project-card">
@@ -592,16 +551,13 @@
 
       } else if (Meals == "3") {
         // 沙拉
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
         </div>`
         ;
-
         project.innerHTML =`
               @foreach ($mealTag[2]->meal as $item)
                         <div class="project-card">
@@ -621,16 +577,13 @@
 
       } else if (Meals == "4") {
         // 點心
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
             `;
-
         project.innerHTML =`
               @foreach ($mealTag[3]->meal as $item)
                     <div class="project-card">
@@ -647,10 +600,8 @@
                     </div>
               @endforeach
         `;
-
       } else if (Meals == "5") {
         // 精選下午茶
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
 
@@ -659,7 +610,6 @@
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間14：00～16：30</div>
         </div>
         `;
-
         project.innerHTML =`
         <div class="project">
           @foreach ($mealTag[4]->meal as $item)
@@ -678,20 +628,16 @@
               @endforeach
         </div>
     `;
-    
       } else if (Meals == "6") {
         // 中興大學學生特餐
-
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
             <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※限興大學生憑學生證選用<br>一證一套。</div>
         </div>
         `;
-
         project.innerHTML = `     
           @foreach ($mealTag[5]->meal as $item)
                     <div class="project-card">
@@ -712,14 +658,12 @@
         // 日式咖哩
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-        
         project.innerHTML = `
               @foreach ($mealTag[6]->meal as $item)
                     <div class="project-card">
@@ -741,14 +685,12 @@
         // 異國米飯
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-
         project.innerHTML = `
               @foreach ($mealTag[7]->meal as $item)
                     <div class="project-card">
@@ -769,14 +711,12 @@
         // 義大利麵
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間11：00～19：30</div>
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
             `;
-
         project.innerHTML = `
               @foreach ($mealTag[8]->meal as $item)
                     <div class="project-card">
@@ -797,5 +737,4 @@
     }
   </script>
 </body>
-
 </html>

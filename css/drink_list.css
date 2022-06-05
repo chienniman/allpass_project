@@ -291,7 +291,7 @@ body, .company_and_phone {
 }
 
 #vue_menu .ice-hot-selector {
-  width: 180px;
+  min-width: 155px;
 }
 
 #vue_menu .btns {

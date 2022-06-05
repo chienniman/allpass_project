@@ -626,7 +626,6 @@ var curry_jp_list = [
         meal_price: '380元',
     }
 ]
-
 // 7異國米飯料理
 var exotic_rice_list = [
     {
@@ -678,8 +677,6 @@ var exotic_rice_list = [
         meal_price: '380元',
     }
 ]
-
-
 // 8義大利麵
 var pasta_list = [
     {
@@ -747,12 +744,9 @@ var pasta_list = [
         meal_price: '380元',
     }
 ]
-
 // breakfast_list.forEach(function (element, index) {
 //     console.log(element.meal_name);
 // });
-
-
 //全部餐點
 function all_Meals() {
     // 引入box-inner的div
@@ -762,7 +756,6 @@ function all_Meals() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     Meals_project.innerHTML = `
             <div class="Remark">
                 <div>
@@ -800,11 +793,7 @@ function all_Meals() {
                     </div>
                 `;
     });
-    
-
 }
-
-
 //早餐
 function breakfast() {
     // 引入box-inner的div
@@ -814,14 +803,12 @@ function breakfast() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～10：30</div>
         </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     breakfast_list.forEach(function (element) {
         project.innerHTML += `
@@ -840,13 +827,9 @@ function breakfast() {
                     </div>
                 `;
     });
-
 }
-
-
 //沙拉
 function salad() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -854,14 +837,12 @@ function salad() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
         </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     salad_list.forEach(function (element) {
         project.innerHTML += `
@@ -882,11 +863,8 @@ function salad() {
     });
 
 }
-
-
 //點心
 function dessert() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -894,14 +872,12 @@ function dessert() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     dessert_list.forEach(function (element) {
         project.innerHTML += `
@@ -921,10 +897,8 @@ function dessert() {
                 `;
     });
 }
-
 //精選下午茶
 function afternoon_tea() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -932,14 +906,12 @@ function afternoon_tea() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間14：00～16：30</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     afternoon_tea_list.forEach(function (element) {
         project.innerHTML += `
@@ -959,10 +931,8 @@ function afternoon_tea() {
                 `;
     });
 }
-
 //中興大學學生特餐
 function nchu_student() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -970,7 +940,6 @@ function nchu_student() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
@@ -978,7 +947,6 @@ function nchu_student() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px;">※限興大學生憑學生證選用<br>一證一套。</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     nchu_student_list.forEach(function (element) {
         project.innerHTML += `
@@ -1001,7 +969,6 @@ function nchu_student() {
 
 //日式咖哩
 function curry_jp() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -1009,7 +976,6 @@ function curry_jp() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
@@ -1017,7 +983,6 @@ function curry_jp() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     curry_jp_list.forEach(function (element) {
         project.innerHTML += `
@@ -1037,10 +1002,8 @@ function curry_jp() {
                 `;
     });
 }
-
 //異國米飯
 function exotic_rice() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -1048,7 +1011,6 @@ function exotic_rice() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
@@ -1056,7 +1018,6 @@ function exotic_rice() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     exotic_rice_list.forEach(function (element) {
         project.innerHTML += `
@@ -1076,10 +1037,8 @@ function exotic_rice() {
                 `;
     });
 }
-
 //義大利麵
 function pasta() {
-
     // 引入box-inner的div
     var Meals_project = document.querySelector('.box-inner');
     // 引入project的div
@@ -1087,7 +1046,6 @@ function pasta() {
     // 淨空
     Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     // 由box-inner的div印出附加的餐飲訊息
     Meals_project.innerHTML = `
             <div class="Remark">
@@ -1095,7 +1053,6 @@ function pasta() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
     `;
-
     //由project的div印出breakfast_list陣列資料
     pasta_list.forEach(function (element) {
         project.innerHTML += `
@@ -1115,23 +1072,18 @@ function pasta() {
                 `;
     });
 }
-
-
 // RWD出現的餐點選擇列表
 function meal() {
     var Meals = document.querySelector('#meals').value;
     var Meals_project = document.querySelector('.box-inner');
     var project = document.querySelector('.project');
-
     // Meals_project.innerHTML = "";
     project.innerHTML = "";
-
     if (Meals == "1") {
         // 全部餐點
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
             <div class="Remark">
@@ -1152,7 +1104,6 @@ function meal() {
               </div>
             </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         all_list.forEach(function (element) {
             project.innerHTML += `
@@ -1171,20 +1122,17 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "2") {
         //早餐
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～10：30</div>
         </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         breakfast_list.forEach(function (element) {
             project.innerHTML += `
@@ -1203,20 +1151,17 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "3") {
         // 沙拉
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
         </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         salad_list.forEach(function (element) {
             project.innerHTML += `
@@ -1235,20 +1180,17 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "4") {
         // 點心
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
             <div class="Remark">
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間08：00～19：30</div>
             </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         dessert_list.forEach(function (element) {
             project.innerHTML += `
@@ -1267,20 +1209,17 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "5") {
         // 精選下午茶
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-    
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
         <div class="Remark">
             <div style="color:#f95223; font-size: 30px;font-weight: 600;">※供餐時間14：00～16：30</div>
         </div>
         `;
-    
         //由project的div印出breakfast_list陣列資料
         afternoon_tea_list.forEach(function (element) {
             project.innerHTML += `
@@ -1299,13 +1238,11 @@ function meal() {
                         </div>
                     `;
         });
-     
     } else if (Meals == "6") {
         // 中興大學學生特餐
         // 淨空
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
         <div class="Remark">
@@ -1313,7 +1250,6 @@ function meal() {
             <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※限興大學生憑學生證選用<br>一證一套。</div>
         </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         nchu_student_list.forEach(function (element) {
             project.innerHTML += `
@@ -1332,12 +1268,10 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "7") {
         // 日式咖哩
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
             <div class="Remark">
@@ -1345,7 +1279,6 @@ function meal() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         curry_jp_list.forEach(function (element) {
             project.innerHTML += `
@@ -1364,12 +1297,10 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "8") {
         // 異國米飯
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
             <div class="Remark">
@@ -1377,7 +1308,6 @@ function meal() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         exotic_rice_list.forEach(function (element) {
             project.innerHTML += `
@@ -1396,12 +1326,10 @@ function meal() {
                         </div>
                     `;
         });
-
     } else if (Meals == "9") {
         // 義大利麵
         Meals_project.innerHTML = "";
         project.innerHTML = "";
-
         // 由box-inner的div印出附加的餐飲訊息
         Meals_project.innerHTML = `
             <div class="Remark">
@@ -1409,7 +1337,6 @@ function meal() {
                 <div style="color:#f95223; font-size: 30px;font-weight: 600;padding-top:30px ;">※升級套餐可享有濃湯與手工麵包一份</div>
             </div>
         `;
-
         //由project的div印出breakfast_list陣列資料
         pasta_list.forEach(function (element) {
             project.innerHTML += `
