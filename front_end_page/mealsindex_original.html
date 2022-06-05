@@ -11,12 +11,11 @@
   <!-- 模板 css檔案 -->
   <link rel="stylesheet" href="../css/mealsindex.css" />
 </head>
-
 <body>
   <header id="header">
     <nav>
       <!-- 導覽列上的店家logo -->
-      <a href="./index.html" class="nav_logo">
+      <a href="index.html" class="nav_logo">
         <div class="logo">
           <img class="logo_img" src="../pics/logo.jpeg" alt="" />
         </div>
@@ -26,16 +25,24 @@
         <!-- 1440px 選單列 -->
         <ul class="nav_content_pc">
           <li>
-            <a href="#">品牌故事</a>
+            <a href="story.html">
+              品牌故事
+            </a>
           </li>
           <li>
-            <a href="#">商品介紹</a>
+            <a href="mealsindex_original.html">
+              餐點介紹
+            </a>
           </li>
           <li>
-            <a href="#">門市據點</a>
+            <a href="drink_list.html">
+              飲品介紹
+            </a>
           </li>
           <li>
-            <a href="#">意見回饋</a>
+            <a href="position_map.html">
+              門市據點
+            </a>
           </li>
         </ul>
       </div>
@@ -51,7 +58,7 @@
         <input type="checkbox" id="burger" hidden />
         <ul class="list">
           <li>
-            <a href="##" class="list-project">品牌故事</a>
+            <a href="story.html" class="list-project">品牌故事</a>
           </li>
           <li>
             <label class="list-project" for="commodity" for="commodity">
@@ -60,7 +67,7 @@
             <input type="checkbox" id="commodity" hidden />
             <ul class="commodity-box">
               <li>
-                <a class="commodity-list" href="#">
+                <a class="commodity-list" href="drink_list.html">
                   <p>
                     飲料列表
                   </p>
@@ -68,7 +75,7 @@
                 </a>
               </li>
               <li>
-                <a class="commodity-list" href="#">
+                <a class="commodity-list" href="mealsindex_original.html">
                   <p>
                     餐點列表
                   </p>
@@ -78,18 +85,16 @@
             </ul>
           </li>
           <li>
-            <a class="list-project">門市據點</a>
+            <a href="position_map.html" class="list-project">門市據點</a>
           </li>
           <li>
-            <a href="##" class="list-project">意見回饋</a>
+            <a href="feedback.html" class="list-project">意見回饋</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-
   <main id="main">
-
     <section id="Meals-box">
       <div class="Meals-list">
         <div class="list-btn" onclick="all_Meals();">全部餐點<br>All</div>
@@ -102,7 +107,6 @@
         <div class="list-btn-two" onclick="exotic_rice();">異國米飯料理/附飲品<br>Exotic Rice</div>
         <div class="list-btn" onclick="pasta();">義大利麵／附飲品<br>Spaghetti</div>
       </div>
-
       <div class="Meals-project-box">
         <!-- RWD出現的餐點選擇列表 -->
         <div class="Meals-list-RWD">
@@ -120,7 +124,6 @@
             <option value="9">義大利麵／附飲品</option>
           </select>
         </div>
-
         <!-- 大調整DIV結構與JS內容使選單this範圍改變並生效 -->
         <div class="box-inner">
           <div class="Remark">
@@ -145,18 +148,12 @@
             </div>
           </div>
         </div>
-
         <!-- 餐點項目卡片顯示區 -->
         <div class="project">
-
         </div>
-
       </div>
     </section>
-
   </main>
-
-
   <footer id="footer">
     <div class="footer_content">
       <div class="logo_and_links">
@@ -166,16 +163,16 @@
         <div class="links_group_wrapper">
           <ul class="links_group">
             <li class="link">
-              <a href="#"> 顧客權益 </a>
+              <a href="right_of_customer.html"> 顧客權益 </a>
             </li>
             <li class="link">
               <a href="#"> 聯絡我們 </a>
             </li>
             <li class="link">
-              <a href="#"> 意見回饋 </a>
+              <a href="feedback.html"> 意見回饋 </a>
             </li>
             <li class="link">
-              <a href="#"> FB粉絲專頁 </a>
+              <a href="https://www.facebook.com/nchuallpass/"  target="_blank"> FB粉絲專頁 </a>
             </li>
           </ul>
         </div>
@@ -195,9 +192,7 @@
       </div>
     </div>
   </footer>
-
   <script src="../js/mealsindex.js"></script>
-
   <!-- 本網頁使用圖片來源與作者 -->
   <!-- <a href="https://www.flaticon.com/free-icons/wellington" title="wellington icons">Wellington icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icons">Ramen icons created by justicon - Flaticon</a>
@@ -209,7 +204,5 @@
   <a href="https://www.flaticon.com/free-icons/pasta" title="pasta icons">Pasta icons created by Flat-icons-com - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/fries" title="fries icons">Fries icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/breakfast" title="breakfast icons">Breakfast icons created by Freepik - Flaticon</a> -->
-  
 </body>
-
 </html>

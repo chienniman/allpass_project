@@ -9,7 +9,6 @@
 // <a href="https://www.flaticon.com/free-icons/pasta" title="pasta icons">Pasta icons created by Flat-icons-com - Flaticon</a>
 // <a href="https://www.flaticon.com/free-icons/fries" title="fries icons">Fries icons created by Freepik - Flaticon</a>
 // <a href="https://www.flaticon.com/free-icons/breakfast" title="breakfast icons">Breakfast icons created by Freepik - Flaticon</a> -->
-
 //區域歸類
 //0全部餐點
 var all_list = [
