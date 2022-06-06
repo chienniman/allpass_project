@@ -336,6 +336,7 @@ body {
           display: flex;
         }
         .mySwiper2 {
+          position: relative;
           width: 50%;
           @media(max-width:768px){
             width: 100%;
@@ -343,9 +344,22 @@ body {
           .swiper-slide {
             background: transparent;
             img {
+              border-radius: 10%;
               @include size(100%, 100%);
               display: block;
               object-fit: cover;
+            }
+            .bg-text{
+              position: absolute;
+              @include size(100%, 100%);
+              background-color: rgba(105,105,105, 0.8);
+              color: white;
+              h3{
+                font-size: 32px;
+              }
+            }
+            &:hover .bg-text{
+              display: none;
             }
           }
         }
@@ -353,6 +367,7 @@ body {
           overflow: unset;
           @include size(50%, 100%);
           .swiper-slide {
+            position: relative;
             border-radius: 8%;
             display: flex;
             flex-direction: column;
@@ -363,6 +378,9 @@ body {
               object-fit: cover;
             }
             .text {
+              top: 400px;
+              left: 155px;
+              position: absolute;
               white-space: nowrap;
               padding: 7% 0;
               font-size: 24px;
