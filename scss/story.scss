@@ -293,14 +293,10 @@ ul{
   // 修 data-aos="fade-left" bug
   overflow: hidden;
   .top_photo{
-    background-image: url("../pics/balls/pc_top.png");
+    background-image: url("../pics/balls/top_img.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 658px;
-    @media (max-width:768px){
-      background-image: url("../pics/balls/mobile_top.png");
-      height: 351px;
-    }
+    height: 50vw;
   }
   .story_of_allpass{
     position: relative;
@@ -467,6 +463,9 @@ ul{
       top: -200px;
       // padding: 3%;
     }
+    img:hover{
+      transform: scale(1.2);
+    }
   }
   .item3{
     margin: 0 auto;
@@ -551,6 +550,9 @@ ul{
       left:-5%;
       top: -330px;
     }
+    img:hover{
+      transform: scale(1.2);
+    }
   }
   .item5{
     margin: 0 auto;
@@ -560,6 +562,9 @@ ul{
       position: relative;
       left:50%;
       top: -270px;
+    }
+    img:hover{
+      transform: scale(1.2);
     }
   }
   .item6{

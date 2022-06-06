@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #f4f2e6;
 }
@@ -255,6 +256,13 @@ body {
   margin: 10px;
 }
 
+#top_img {
+  background-image: url("../pics/balls/top_img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
 #main #news {
   width: 80%;
   height: unset;
@@ -268,7 +276,7 @@ body {
 
 #main #news .news_title {
   color: #2fbfac;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 @media (max-width: 768px) {
@@ -541,6 +549,58 @@ body {
   height: 20px;
   background-color: #FEAD3B;
   margin: 0px 5px;
+}
+
+#main #social_feedback {
+  width: 80%;
+  height: unset;
+  margin: 0 auto;
+}
+
+#main #social_feedback .social_feedback_title {
+  color: #2fbfac;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  #main #social_feedback .social_feedback_title {
+    font-size: 35px;
+  }
+}
+
+#main #social_feedback .social_feedback_title::after {
+  content: "最美味的餐點，值得你來品嚐";
+  display: block;
+  font-size: 24px;
+  color: #000;
+  margin-top: 20px;
+}
+
+#main #social_feedback .post {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main #social_feedback .post .inner_post {
+  margin-bottom: 30px;
+}
+
+#main #social_feedback .post::before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  display: block;
+  background-color: #ffad3d;
+  margin: 20px auto;
 }
 
 #footer {
