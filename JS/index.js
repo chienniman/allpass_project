@@ -18,14 +18,14 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper1 = new Swiper(".mySwiper1", {
   loop: true,
-  spaceBetween: 50,
+  spaceBetween: 300,
   slidesPerView: 2,
   freeMode: true,
   watchSlidesProgress: true,
-  // autoplay: {
-  //   delay:1000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay:2000,
+    disableOnInteraction: false,
+  },
 });
 var swiper2 = new Swiper(".mySwiper2", {
   loop: false,

@@ -428,12 +428,17 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 {
-  margin-bottom: 50px;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #main #meal_card .meal_swiper .card .mySwiper2 {
+    width: 100%;
+  }
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide {
-  width: 100%;
-  height: 100%;
+  background: transparent;
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide img {
@@ -451,9 +456,7 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide {
-  background-color: #f4f2e6;
   border-radius: 8%;
-  padding-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,6 +464,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: transparent;
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide img {
@@ -472,8 +476,27 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide .text {
+  white-space: nowrap;
   padding: 7% 0;
   font-size: 24px;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 .plate {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url("../pics/popular_meals/plate.png");
+  background-size: cover;
+}
+
+#main #meal_card .meal_swiper .card .mySwiper1 .plate img {
+  display: block;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 150px;
+  top: 150px;
 }
 
 #main #evaluation-area {

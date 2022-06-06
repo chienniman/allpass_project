@@ -330,9 +330,12 @@ body {
           display: flex;
         }
         .mySwiper2 {
-          margin-bottom: 50px;
+          width: 50%;
+          @media(max-width:768px){
+            width: 100%;
+          }
           .swiper-slide {
-            @include size(100%, 100%);
+            background: transparent;
             img {
               @include size(100%, 100%);
               display: block;
@@ -344,19 +347,35 @@ body {
           overflow: unset;
           @include size(50%, 100%);
           .swiper-slide {
-            background-color: #f4f2e6;
             border-radius: 8%;
-            padding-top: 10%;
             display: flex;
             flex-direction: column;
+            background: transparent;
             img {
               @include size(90%, 60%);
               display: block;
               object-fit: cover;
             }
             .text {
+              white-space: nowrap;
               padding: 7% 0;
               font-size: 24px;
+            }
+          }
+          .plate{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-image: url('../pics/popular_meals/plate.png');
+            background-size: cover;
+            img{
+              display: block;
+              border-radius: 100px;
+              width: 200px;
+              height: 200px;
+              position: absolute;
+              left: 150px;
+              top: 150px;
             }
           }
         }
