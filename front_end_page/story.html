@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/story.css">
 
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    
+
+   
+
   </head>
   <body>
     <header id="header">
@@ -102,27 +108,30 @@
             <div class="story_content">
               <div class="title">歐巴斯的誕生</div>
               <ul>
-                <li id="show" class="show" onclick="show1()">
-                  源起
-                  <span id="hide1" class="inner_text" style="display: none;"> 
-                    由中興大學土木學系的校友，以興友企業的身分，奪得興大進善亭的經營權
+                <li id="show" class="show" data-aos="zoom-in">
+                  <span id="hide1" class="inner_text"> 
+                    最初是由中興大學土木系的校友們，以興友企業的身分，奪得興大進善亭的經營權，才成立了歐巴斯。
+                  </span>
+                </li>
+                <li id="show" class="show" data-aos="zoom-in">
+                  <span id="hide1" class="inner_text inner_text_2"> 
+                    聊起大學生活，最重要的三學分則是，愛情、課業、社團。其重要性彷彿沒有修滿就不是所謂的大學生，
+                    而餐廳的名字也因希望所有學生的學分能夠ALL PASS，因此店名就採用「歐巴斯」這個名字。
                   </span>
                 </li>
                 
-                <li class="show" onclick="show2()">
-                  構想
-                  <span id="hide2" class="inner_text hide" style="display: none;"> 
+                <!-- <li class="show">
+                  <span id="hide2" class="inner_text hide"> 
                     聊起大學生活，最重要的三學分則是，愛情、課業、社團。 </br>
                     其重要性彷彿沒有修滿就不是所謂的大學生，但最後還是認為所有學生最希望的是考試能夠ALL PASS，因此店名就採用「歐巴斯」這個名字了
                   </span>
                 </li>
                 
-                <li class="show" onclick="show3()">
-                 宗旨
-                  <span id="hide3" class="inner_text hide" style="display: none;"> 
+                <li class="show">
+                  <span id="hide3" class="inner_text hide"> 
                     想為學校設立一個獨特地標，就像一說到東海，大家就會聯想到教堂一樣。另外的宗旨則是：一、美化校園，二、師生健康，三、回饋學校
                   </span>
-                </li>
+                </li> -->
               </ul>
             </div>
           </li>
@@ -169,7 +178,7 @@
           </li>
           <!-- 圖 -->
           <li class="item item4" data-aos="fade-right">
-            <img src="../pics/balls//ball_3.png" alt="餐點">
+            <img src="../pics/balls//ball_5.png" alt="餐點">
           </li>
           
           <li class="item item5" data-aos="fade-left">
@@ -233,8 +242,11 @@
         </div>
       </div>
     </footer>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="../JS/story.js"></script>
+
+    
   </body>
 </html>

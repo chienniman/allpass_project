@@ -519,4 +519,14 @@ form .forms .btn button {
   padding: 8px;
   background-color: #ffffff;
 }
+
+form .forms .error {
+  color: #dc3545;
+}
+
+form .forms label.error {
+  width: 100%;
+  height: 20px;
+  margin-top: -30px;
+}
 /*# sourceMappingURL=feedback.css.map */

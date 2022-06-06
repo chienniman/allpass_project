@@ -421,7 +421,7 @@ ul {
 }
 
 ul .top_photo {
-  background-image: url("../pics/balls/Group 387.png");
+  background-image: url("../pics/balls/pc_top.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 658px;
@@ -429,7 +429,7 @@ ul .top_photo {
 
 @media (max-width: 768px) {
   ul .top_photo {
-    background-image: url("../pics/balls/Group 351.png");
+    background-image: url("../pics/balls/mobile_top.png");
     height: 351px;
   }
 }
@@ -455,7 +455,7 @@ ul .story_of_allpass .story_content {
   width: 50%;
   height: 60%;
   position: absolute;
-  top: 20%;
+  top: 25%;
 }
 
 ul .story_of_allpass .story_content .title {
@@ -488,13 +488,14 @@ ul .story_of_allpass .story_content .title::after {
   content: '';
   display: block;
   background-color: #FEAD3B;
-  margin: 10% auto;
+  margin: 3% auto;
 }
 
 ul .story_of_allpass .story_content .show {
   font-size: 35px;
+  color: #544027b7;
   text-align: center;
-  padding: 3% 0;
+  padding: 1% 0;
 }
 
 @media (max-width: 990px) {
@@ -524,31 +525,45 @@ ul .story_of_allpass .story_content .show {
 ul .story_of_allpass .story_content .show .inner_text {
   font-size: 25px;
   padding: 2% 2% 0 2%;
-  line-height: 40px;
-  text-align: start;
+  line-height: 55px;
 }
 
 @media (max-width: 990px) {
   ul .story_of_allpass .story_content .show .inner_text {
     font-size: 15px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 768px) {
   ul .story_of_allpass .story_content .show .inner_text {
     font-size: 13px;
+    line-height: 30px;
   }
 }
 
 @media (max-width: 550px) {
   ul .story_of_allpass .story_content .show .inner_text {
     font-size: 10px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 495px) {
+  ul .story_of_allpass .story_content .show .inner_text {
+    line-height: 15px;
   }
 }
 
 @media (max-width: 380px) {
   ul .story_of_allpass .story_content .show .inner_text {
-    font-size: 6px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  ul .story_of_allpass .story_content .show .inner_text_2 {
+    display: none;
   }
 }
 
@@ -597,6 +612,20 @@ ul .item1 .title {
 @media (max-width: 768px) {
   ul .item1 .title {
     text-align: center;
+    left: 35%;
+    top: 35%;
+  }
+}
+
+@media (max-width: 620px) {
+  ul .item1 .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 540px) {
+  ul .item1 .title {
+    font-size: 20px;
   }
 }
 
@@ -619,6 +648,13 @@ ul .item1 .title .text {
   }
 }
 
+@media (max-width: 540px) {
+  ul .item1 .title .text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
 ul .item1 .title::before {
   width: 100%;
   height: 2px;
@@ -626,6 +662,12 @@ ul .item1 .title::before {
   display: block;
   border-top: 2px solid #FFFBF2;
   padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  ul .item1 .title::before {
+    display: none;
+  }
 }
 
 ul .item2 {
@@ -673,6 +715,35 @@ ul .item3 .type {
   }
 }
 
+@media (max-width: 768px) {
+  ul .item3 .type {
+    text-align: center;
+    left: 35%;
+    top: 18%;
+  }
+}
+
+@media (max-width: 620px) {
+  ul .item3 .type {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  ul .item3 .type {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 385px) {
+  ul .item3 .type {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
 ul .item3 .type::before {
   content: " 餐點種類";
   display: block;
@@ -687,12 +758,37 @@ ul .item3 .type::before {
   }
 }
 
+@media (max-width: 768px) {
+  ul .item3 .type::before {
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  ul .item3 .type::before {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
 ul .item3 .type::after {
   content: " ";
   display: block;
   font-size: 24px;
   border-bottom: 2px solid #F4F2E6;
   padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+  ul .item3 .type::after {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  ul .item3 .type::after {
+    font-size: 15px;
+  }
 }
 
 ul .item4 {

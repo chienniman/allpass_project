@@ -293,12 +293,12 @@ ul{
   // 修 data-aos="fade-left" bug
   overflow: hidden;
   .top_photo{
-    background-image: url("../pics/balls/Group\ 387.png");
+    background-image: url("../pics/balls/pc_top.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 658px;
     @media (max-width:768px){
-      background-image: url("../pics/balls/Group\ 351.png");
+      background-image: url("../pics/balls/mobile_top.png");
       height: 351px;
     }
   }
@@ -314,7 +314,7 @@ ul{
     .story_content{
         @include size(50%, 60%);
         position: absolute;
-        top: 20%;
+        top: 25%;
         .title{
           text-align: center;
           font-size: 48px;
@@ -330,17 +330,18 @@ ul{
           } 
         }
         .title::after{
-            @include size(100%, 2px);
-            content: '';
-            display:block;
-            background-color: #FEAD3B;
-            margin: 10% auto;
+          @include size(100%, 2px);
+          content: '';
+          display:block;
+          background-color: #FEAD3B;
+          margin: 3% auto;
             
         }
         .show{
           font-size: 35px;
+          color: #544027b7;
           text-align: center;
-          padding: 3% 0;
+          padding: 1% 0;
           @media(max-width:990px){
             font-size: 25px;
           }
@@ -357,19 +358,29 @@ ul{
           .inner_text{
             font-size: 25px;
             padding: 2% 2% 0 2%;
-            line-height: 40px;
-            text-align: start;
+            line-height: 55px;
             @media(max-width:990px){
               font-size: 15px;
+              line-height: 50px;
             }
             @media(max-width:768px){
               font-size: 13px;
+              line-height: 30px;
             }
             @media(max-width:550px){
               font-size: 10px;
+              line-height: 30px;
+            }
+            @media(max-width:495px){
+              line-height: 15px;
             }
             @media(max-width:380px){
-              font-size: 6px;
+              line-height: 30px;
+            }
+          }
+          .inner_text_2{
+            @media(max-width:380px){
+              display: none;
             }
           }
           
@@ -409,6 +420,14 @@ ul{
       } 
       @media(max-width:768px){
         text-align: center;
+        left: 35%;
+        top: 35%;
+      } 
+      @media(max-width:620px){
+        font-size: 35px;
+      } 
+      @media(max-width:540px){
+        font-size: 20px;
       } 
       .text{
         font-size: 24px;
@@ -421,6 +440,10 @@ ul{
         @media(max-width:768px){
           text-align: center;
         } 
+        @media(max-width:540px){
+          font-size: 15px;
+          line-height: 25px;
+        } 
       }
     }
     .title::before{
@@ -429,6 +452,9 @@ ul{
       display:block;
       border-top: 2px solid #FFFBF2;
       padding-bottom: 5%;
+      @media(max-width:768px){
+        display: none;
+      } 
     }
 
   }
@@ -466,6 +492,23 @@ ul{
         left: 13%;
         font-size: 20px;
       }
+      @media(max-width:768px){
+        text-align: center;
+        left: 35%;
+        top: 18%;
+      } 
+      @media(max-width:620px){
+        font-size: 15px;
+        line-height: 30px;
+      } 
+      @media(max-width:460px){
+        font-size: 13px;
+        line-height: 25px;
+      } 
+      @media(max-width:385px){
+        font-size: 11px;
+        line-height: 20px;
+      } 
     }
     .type::before{
       content:" 餐點種類";
@@ -476,6 +519,14 @@ ul{
       @media(max-width:950px){
         font-size: 40px;
       }
+      @media(max-width:768px){
+        text-align: center;
+      } 
+      @media(max-width:620px){
+        font-size: 20px;
+        font-weight: bold;
+      } 
+
     }
     .type::after{
       content:" ";
@@ -483,6 +534,12 @@ ul{
       font-size: 24px;
       border-bottom: 2px solid #F4F2E6;
       padding-top: 5%;
+      @media(max-width:768px){
+        display: none;
+      } 
+      @media(max-width:620px){
+        font-size: 15px;
+      } 
     }
   }
   .item4{

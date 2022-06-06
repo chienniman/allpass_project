@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <!-- 模板 css檔案 -->
     <link rel="stylesheet" href="../css/feedback.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -114,23 +116,22 @@
               <option value="3" >下午</option>
             </select>
             
-            <input id="feedback_name" type="text" name="name" placeholder="聯絡人姓名 *" required>
-            <!-- <small></small> -->
-            <select id="feedback_name" name="salutation">
+            <input id="feedback_name" type="text" name="name" placeholder="聯絡人姓名 *" required style="width: 100%;"> 
+            <!-- <span class="error1">333</span> -->
+            <select id="feedback_name" name="salutation" style="width: 100%;">
               <option value="1" >先生</option>
               <option value="2" >小姐</option>
               <option value="3" >其他</option>
             </select>
             
-            <input id="feedback_phone" type="number" name="phone" placeholder="聯絡電話 *" required>
-            <!-- <small></small> -->
-            <input id="feedback_email" type="text" name="email" placeholder="Email">
-            <!-- <small></small> -->
+      
+            <input id="feedback_phone" type="text" name="phone" placeholder="聯絡電話 *" required style="width: 100%;">   
+            <input id="feedback_email" type="text" name="email" placeholder="Email" style="width: 100%;">
           </div>
-          <textarea id="feedback_suggestion" name="suggestion" id="" cols="30" rows="10" placeholder="建議內容 *" required></textarea>
-          <!-- <small></small> -->
+          <textarea id="feedback_suggestion" name="suggestion" cols="30" rows="10" placeholder="建議內容 *" required></textarea>
+
           <div class="btn">
-            <button id="add_feedback_btn" type="button" style="cursor:pointer;">送出</button>
+            <button id="add_feedback_btn" type="submit" style="cursor:pointer;">送出</button>
           </div>
         </div>
       </form>
@@ -172,7 +173,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="../JS/feedback.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
   </body>
 </html>
