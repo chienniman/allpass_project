@@ -354,6 +354,10 @@ body, .company_and_phone {
   color: white;
 }
 
+#vue_menu .btn_groups {
+  max-width: 768px;
+}
+
 #vue_menu .btn_groups .btn {
   width: 170px;
   height: 50px;

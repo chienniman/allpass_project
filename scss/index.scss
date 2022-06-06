@@ -336,13 +336,30 @@ body {
           display: flex;
         }
         .mySwiper2 {
-          margin-bottom: 50px;
+          position: relative;
+          width: 50%;
+          @media(max-width:768px){
+            width: 100%;
+          }
           .swiper-slide {
-            @include size(100%, 100%);
+            background: transparent;
             img {
+              border-radius: 10%;
               @include size(100%, 100%);
               display: block;
               object-fit: cover;
+            }
+            .bg-text{
+              position: absolute;
+              @include size(100%, 100%);
+              background-color: rgba(105,105,105, 0.8);
+              color: white;
+              h3{
+                font-size: 32px;
+              }
+            }
+            &:hover .bg-text{
+              display: none;
             }
           }
         }
@@ -350,19 +367,39 @@ body {
           overflow: unset;
           @include size(50%, 100%);
           .swiper-slide {
-            background-color: #f4f2e6;
+            position: relative;
             border-radius: 8%;
-            padding-top: 10%;
             display: flex;
             flex-direction: column;
+            background: transparent;
             img {
               @include size(90%, 60%);
               display: block;
               object-fit: cover;
             }
             .text {
+              top: 400px;
+              left: 155px;
+              position: absolute;
+              white-space: nowrap;
               padding: 7% 0;
               font-size: 24px;
+            }
+          }
+          .plate{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-image: url('../pics/popular_meals/plate.png');
+            background-size: cover;
+            img{
+              display: block;
+              border-radius: 100px;
+              width: 200px;
+              height: 200px;
+              position: absolute;
+              left: 150px;
+              top: 150px;
             }
           }
         }
