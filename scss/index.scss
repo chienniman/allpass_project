@@ -453,23 +453,21 @@ body {
       display: block;
       font-size: 24px;
       color: #000;
-      margin-top: 20px;
+      border-bottom: 2px solid #ffad3d;
+      margin: 20px 0;
+      padding-bottom: 20px;
     }
+    // 每則貼文
     .post{
       justify-content: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      max-width: 1303px;
+      margin: 0 auto;
       .inner_post{
         margin-bottom: 30px;
       }
-    }
-    .post::before {
-      @include size(100%, 2px);
-      content: "";
-      display: block;
-      background-color: #ffad3d;
-      margin: 20px auto;
     }
   }
 }
@@ -574,5 +572,3 @@ body {
     position: absolute;
   }
 }
-
-// ----------------MAIN------------------
