@@ -390,9 +390,6 @@ body {
 }
 
 #main #meal_card .meal_swiper .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 10px;
 }
 
@@ -431,8 +428,7 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 {
-  width: 50%;
-  height: 100%;
+  margin-bottom: 50px;
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide {
@@ -449,6 +445,7 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 {
+  overflow: unset;
   width: 50%;
   height: 100%;
 }
