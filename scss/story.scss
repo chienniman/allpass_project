@@ -308,79 +308,98 @@ ul{
       padding: 3%;
     }
     .story_content{
-        @include size(50%, 60%);
-        position: absolute;
-        top: 25%;
-        .title{
-          text-align: center;
-          font-size: 48px;
-          color: #6accbf;
-          @media(max-width:768px){
+      @include size(50%, 60%);
+      position: absolute;
+      top: 25%;
+      .title{
+        text-align: center;
+        font-size: 100px;
+        color: #6accbf;
+        @media(max-width:1500px){
+          font-size: 80px;
+        }
+        @media(max-width:1440px){
+          font-size: 60px;
+        }
+        @media(max-width:768px){
+          font-size: 35px;
+        }
+        @media(max-width:550px){
+          font-size: 25px;
+        }
+        @media(max-width:380px){
+          font-size: 20px;
+        } 
+      }
+      .title::after{
+        @include size(100%, 2px);
+        content: '';
+        display:block;
+        background-color: #FEAD3B;
+        margin: 3% auto;
+          
+      }
+      .show{
+        font-size: 35px;
+        color: #544027b7;
+        text-align: center;
+        padding: 1% 0;
+        @media(max-width:990px){
+          font-size: 25px;
+        }
+        @media(max-width:768px){
+          font-size: 20px;
+        }
+        @media(max-width:550px){
+          font-size: 15px;
+        }
+        @media(max-width:400px){
+          font-size: 10px;
+        } 
+      
+        .inner_text{
+          font-size: 43px;
+          padding: 2% 2% 0 2%;
+          line-height: 55px;
+          @media(max-width:1500px){
+            font-size: 40px;
+          }
+          @media(max-width:1290px){
             font-size: 35px;
+            line-height: 45px;
+          }
+          @media(max-width:1150px){
+            font-size: 25px;
+            line-height: 40px;
+          }
+          @media(max-width:990px){
+            font-size: 15px;
+            line-height: 50px;
+          }
+          @media(max-width:768px){
+            font-size: 13px;
+            line-height: 30px;
+          }
+          @media(max-width:608px){
+            font-size: 13px;
+            line-height: 27px;
           }
           @media(max-width:550px){
-            font-size: 25px;
+            font-size: 10px;
+          }
+          @media(max-width:495px){
+            line-height: 15px;
           }
           @media(max-width:380px){
-            font-size: 20px;
-          } 
+            line-height: 30px;
+          }
         }
-        .title::after{
-          @include size(100%, 2px);
-          content: '';
-          display:block;
-          background-color: #FEAD3B;
-          margin: 3% auto;
-            
+        .inner_text_2{
+          @media(max-width:380px){
+            display: none;
+          }
         }
-        .show{
-          font-size: 35px;
-          color: #544027b7;
-          text-align: center;
-          padding: 1% 0;
-          @media(max-width:990px){
-            font-size: 25px;
-          }
-          @media(max-width:768px){
-            font-size: 20px;
-          }
-          @media(max-width:550px){
-            font-size: 15px;
-          }
-          @media(max-width:400px){
-            font-size: 10px;
-          } 
-        
-          .inner_text{
-            font-size: 25px;
-            padding: 2% 2% 0 2%;
-            line-height: 55px;
-            @media(max-width:990px){
-              font-size: 15px;
-              line-height: 50px;
-            }
-            @media(max-width:768px){
-              font-size: 13px;
-              line-height: 30px;
-            }
-            @media(max-width:550px){
-              font-size: 10px;
-              line-height: 30px;
-            }
-            @media(max-width:495px){
-              line-height: 15px;
-            }
-            @media(max-width:380px){
-              line-height: 30px;
-            }
-          }
-          .inner_text_2{
-            @media(max-width:380px){
-              display: none;
-            }
-          }
-          
-        }
+      }
     }
   }
 }
@@ -404,13 +423,22 @@ ul{
       }
     }
     .title{
-      @include size(30%, 30%);
+      @include size(30%, 50%);
       position: absolute;
       top: 10%;
       left: 15%;
-      font-size: 50px;
+      font-size: 100px;
       color: #FFFBF2;
       text-align: end;
+      @media(max-width:1700px){
+        font-size: 70px;
+      } 
+      @media(max-width:1440px){
+        @include size(30%, 30%);
+        top: 10%;
+        left: 15%;
+        font-size: 50px;
+      } 
       @media(max-width:1300px){
         top: 4%;
       } 
@@ -434,17 +462,20 @@ ul{
       @media(max-width:625px){
         @include size(40%, 30%);
         left: 30%;
-      
       } 
       @media(max-width:540px){
         font-size: 20px;
       } 
       .text{
-        font-size: 22px;
+        font-size: 40px;
         text-align: end;
         padding-top: 5%;
-        line-height: 40px;
+        line-height: 55px;
         text-align: start;
+        @media(max-width:1440px){
+          font-size: 22px;
+          line-height: 40px;
+        }
         @media(max-width:950px){
           font-size: 18px;
         }
@@ -505,7 +536,6 @@ ul{
     z-index:1;
     img{
       @include size(65%, 65%);
-      // padding: 3%;
       position: relative;
       left:-2%;
       top: -270px;
@@ -513,12 +543,18 @@ ul{
     .type{
       @include size(30%, unset);
       position: absolute;
-      bottom: 60%;
+      bottom: 50%;
       left: 10%;
-      font-size: 24px;
-      line-height: 40px;
+      font-size: 40px;
+      line-height: 70px;
       color: #F4F2E6;
       text-align: start;
+      @media(max-width:1440px){
+        bottom: 60%;
+        left: 10%;
+        font-size: 24px;
+        line-height: 40px;
+      }
       @media(max-width:950px){
         bottom: 67%;
         left: 13%;
@@ -545,9 +581,17 @@ ul{
     .type::before{
       content:" 餐點種類";
       display:block;
-      font-size: 50px;
+      font-size: 80px;
       text-align: start;
-      padding-bottom: 5%;
+      padding-bottom: 10%;
+      @media(max-width:1540px){
+        font-size: 65px;
+        padding-bottom: 8%;
+      }
+      @media(max-width:1440px){
+        font-size: 50px;
+        padding-bottom: 5%;
+      }
       @media(max-width:950px){
         font-size: 40px;
       }
@@ -563,7 +607,6 @@ ul{
     .type::after{
       content:" ";
       display:block;
-      font-size: 24px;
       border-bottom: 2px solid #F4F2E6;
       padding-top: 5%;
       @media(max-width:768px){
