@@ -18,8 +18,8 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper1 = new Swiper(".mySwiper1", {
   loop: true,
-  spaceBetween: 300,
-  slidesPerView: 2,
+  spaceBetween: 250,
+  slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
   autoplay: {
