@@ -460,6 +460,7 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text {
+  padding: 0 10%;
   position: absolute;
   width: 100%;
   height: 100%;
