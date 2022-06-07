@@ -506,6 +506,11 @@ body {
       .inner_post{
         margin-bottom: 30px;
       }
+      .sec_post{
+        @media (max-width:768px){
+          display: none;
+        }
+      }
     }
   }
 }

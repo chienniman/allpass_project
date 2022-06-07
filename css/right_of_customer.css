@@ -3,7 +3,6 @@ body {
   background-image: url("../pics/right_of_customer/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: url("../pics/right_of_customer/unknown.ico"), default;
 }
 
 #header {
