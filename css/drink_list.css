@@ -495,7 +495,8 @@ body, .company_and_phone {
 
 #footer {
   height: 220px;
-  background: #6ACCBF;
+  background-image: url("../pics/wave.png");
+  background-size: cover;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +509,26 @@ body, .company_and_phone {
 
 #footer a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    height: 250px;
+    background-image: url("../pics/wave_md.png");
+  }
+}
+
+@media (max-width: 576px) {
+  #footer {
+    background-image: url("../pics/wave_sm.png");
+  }
+}
+
+@media (max-width: 425px) {
+  #footer {
+    background-image: url("../pics/wave_ssm.png");
+    height: 210px;
+  }
 }
 
 #footer .footer_content .wave {
