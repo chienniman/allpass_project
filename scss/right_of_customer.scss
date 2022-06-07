@@ -29,9 +29,10 @@ $secondary_color: #6accbf;
 }
 body {
   background: $primary_color;
-  background-image: url("../pics/bkgd.png");
+  background-image: url("../pics/right_of_customer/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url('../pics/right_of_customer/unknown.ico'), default;
 }
 // 頁首固定在視窗上方
 #header {
@@ -188,10 +189,65 @@ body {
     }
   }
 }
+// 顧客權益
+// 文字白色方塊背景
+.right_of_customer{
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 70%;
+  margin: 10% auto;
+  padding: 3%;
+  position: relative;
+  // 文字設定
+  .text_color{
+    letter-spacing:10px;
+    line-height: 30px;
+  }
+  // 大標題
+  .right_of_inner_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    padding: 2%;
+  }
+  // 大標上日期
+  .right_of_inner_title::before{
+    content:" 2020 / 05 / 10 ";
+    display:block;
+    font-size: 24px;
+    padding: 0 0 32px 0;
+    color: #727272;
+    @media (max-width:768px){
+      font-size: 15px;
+      padding: 0 0 25px 0;
+    }
+    @media (max-width:500px){
+      font-size: 12px;
+    }
+  }
+  // 我是分隔線
+  .line::before{
+    content:" ";
+    display:block;
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 2% 0;
+  }
+  // 內文中小標
+  .right_of_inner_text_title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3% 0 2% 0;
+  }
+  // 內文
+  .right_of_inner_text{
+    font-size: 20px;
+  }
+}
 // 頁尾
 #footer {
   height: 220px;
-  background: $primary_color;
   background-image: url("../pics/wave.png");
   @media(max-width:768px){
     height: 250px;
@@ -287,62 +343,5 @@ body {
     right: 10px;
     top: 100px;
     position: absolute;
-  }
-}
-// ----------------------MAIN----------------------------
-
-// 文字白色方塊背景
-.right_of_customer{
-  width: 80%;
-  background-color: #ffffff;
-  border-radius: 20px;
-  opacity: 70%;
-  margin: 10% auto;
-  padding: 3%;
-  position: relative;
-  // 文字設定
-  .text_color{
-    letter-spacing:10px;
-    line-height: 30px;
-  }
-  // 大標題
-  .right_of_inner_title{
-    width: 100%;
-    font-size: 36px;
-    text-align: center;
-    padding: 2%;
-  }
-  // 大標上日期
-  .right_of_inner_title::before{
-    content:" 2020 / 05 / 10 ";
-    display:block;
-    font-size: 24px;
-    padding: 0 0 32px 0;
-    color: #727272;
-    @media (max-width:768px){
-      font-size: 15px;
-      padding: 0 0 25px 0;
-    }
-    @media (max-width:500px){
-      font-size: 12px;
-    }
-  }
-  // 我是分隔線
-  .line::before{
-    content:" ";
-    display:block;
-    width: 100%;
-    border-top: 2px solid black;
-    padding: 2% 0;
-  }
-  // 內文中小標
-  .right_of_inner_text_title{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 3% 0 2% 0;
-  }
-  // 內文
-  .right_of_inner_text{
-    font-size: 20px;
   }
 }

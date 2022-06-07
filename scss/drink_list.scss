@@ -384,12 +384,24 @@ body,.company_and_phone{
     text-decoration: none;
   }
   height: 220px;
-  background: #6ACCBF;
-  // max-width: 1920px;
+  background-image: url("../pics/wave.png");
+  background-size: cover;
+  // max-width: 1003px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   position: relative;
+  @media(max-width:768px){
+    height: 250px;
+    background-image: url('../pics/wave_md.png');
+  }
+  @media(max-width:576px){
+    background-image: url('../pics/wave_sm.png');
+  }
+  @media(max-width:425px){
+    background-image: url('../pics/wave_ssm.png');
+    height: 210px;
+  }
   // 頁尾的內容部分
   .footer_content {
     // 頁尾波浪型裝飾
