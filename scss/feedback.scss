@@ -34,21 +34,24 @@ $secondary_color: #6accbf;
 }
 body {
   background: $primary_color;
-  background-image: url("../pics/bkgd.png");
+  background-image: url("../pics/feedback/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 20px;
   }
-  &::-webkit-scrollbar-track{
-    background-image: linear-gradient(#afdfd3,#fffdf0,#afdfd3);
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
   }
-  &::-webkit-scrollbar-thumb{
+  &::-webkit-scrollbar-thumb {
     background-color: #FFAD3D;
     border-radius: 50px;
-  }  
+    &:hover {
+      background-image: linear-gradient(#e94619, #ffea00);
+    }
+  }
   @media(max-width:768px){
-    background-image: url("../pics/768-bkgd.png");
+    background-image: url("../pics/feedback/768-bkgd.png");
   }
 }
 // 頁首固定在視窗上方

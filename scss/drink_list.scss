@@ -56,6 +56,19 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1000px;
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #FFAD3D;
+    border-radius: 50px;
+    &:hover {
+      background-image: linear-gradient(#e94619, #ffea00);
+    }
+  }
 }
 .company_and_phone{
   background: $primary_color;

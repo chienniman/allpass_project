@@ -19,6 +19,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+body::-webkit-scrollbar-thumb:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e94619), to(#ffea00));
+  background-image: linear-gradient(#e94619, #ffea00);
+}
+
 #header {
   z-index: 100;
   top: 0;

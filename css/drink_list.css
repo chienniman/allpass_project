@@ -30,6 +30,25 @@ body {
   min-height: 1000px;
 }
 
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#afdfd3), color-stop(#fffdf0), to(#afdfd3));
+  background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFAD3D;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e94619), to(#ffea00));
+  background-image: linear-gradient(#e94619, #ffea00);
+}
+
 .company_and_phone {
   background: #f4f2e6;
 }

@@ -1,6 +1,6 @@
 body {
   background: #f4f2e6;
-  background-image: url("../pics/bkgd.png");
+  background-image: url("../pics/feedback/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,9 +19,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+body::-webkit-scrollbar-thumb:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e94619), to(#ffea00));
+  background-image: linear-gradient(#e94619, #ffea00);
+}
+
 @media (max-width: 768px) {
   body {
-    background-image: url("../pics/768-bkgd.png");
+    background-image: url("../pics/feedback/768-bkgd.png");
   }
 }
 
