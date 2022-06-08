@@ -25,10 +25,10 @@ var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 1,
   freeMode: true,
   watchSlidesProgress: true,
-  // autoplay: {
-  //   delay:2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay:2000,
+    disableOnInteraction: false,
+  },
 });
 var swiper2 = new Swiper(".mySwiper2", {
   loop: false,
