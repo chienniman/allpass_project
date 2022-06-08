@@ -267,7 +267,8 @@ body {
         .time {
           font-size: 20px;
           color: #6c6c6c;
-          letter-spacing: 10px;
+          letter-spacing: 5px;
+          margin-top: 15px;
           @media (max-width: 768px) {
             font-size: 15px;
           }
