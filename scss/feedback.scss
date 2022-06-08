@@ -37,6 +37,16 @@ body {
   background-image: url("../pics/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
+  &::-webkit-scrollbar{
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track{
+    background-image: linear-gradient(#afdfd3,#fffdf0,#afdfd3);
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #FFAD3D;
+    border-radius: 50px;
+  }  
   @media(max-width:768px){
     background-image: url("../pics/768-bkgd.png");
   }

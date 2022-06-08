@@ -5,6 +5,20 @@ body {
   background-size: cover;
 }
 
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#afdfd3), color-stop(#fffdf0), to(#afdfd3));
+  background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFAD3D;
+  border-radius: 50px;
+}
+
 #header {
   z-index: 100;
   top: 0;

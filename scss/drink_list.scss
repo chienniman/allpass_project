@@ -52,8 +52,12 @@ $secondary_color: #6accbf;
 // 個頁面客製化定義
 body{
   overflow-x: hidden;
+  background-image:url('../pics/bg-lg.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
 }
-body,.company_and_phone{
+.company_and_phone{
   background: $primary_color;
 }
 // 頁首固定在視窗上方
@@ -210,13 +214,6 @@ body,.company_and_phone{
       }
     }
   }
-}
-// 飲料清單
-#main{
-  background-image:url('../pics/bg-lg.png') ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 1000px;
 }
 #vue_menu{
   .hot{

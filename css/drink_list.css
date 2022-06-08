@@ -24,9 +24,13 @@
 
 body {
   overflow-x: hidden;
+  background-image: url("../pics/bg-lg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
 }
 
-body, .company_and_phone {
+.company_and_phone {
   background: #f4f2e6;
 }
 
@@ -269,13 +273,6 @@ body, .company_and_phone {
 #header .burger_link .list .commodity-list:hover {
   text-shadow: 0 5px 5px black;
   margin: 10px;
-}
-
-#main {
-  background-image: url("../pics/bg-lg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 1000px;
 }
 
 #vue_menu .hot {
