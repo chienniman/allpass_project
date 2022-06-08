@@ -3,7 +3,20 @@ body {
   background-image: url("../pics/right_of_customer/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: url("../pics/right_of_customer/unknown.ico"), default;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#afdfd3), color-stop(#fffdf0), to(#afdfd3));
+  background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFAD3D;
+  border-radius: 50px;
 }
 
 #header {

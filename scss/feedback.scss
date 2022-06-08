@@ -37,6 +37,16 @@ body {
   background-image: url("../pics/bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
+  &::-webkit-scrollbar{
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track{
+    background-image: linear-gradient(#afdfd3,#fffdf0,#afdfd3);
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #FFAD3D;
+    border-radius: 50px;
+  }  
   @media(max-width:768px){
     background-image: url("../pics/768-bkgd.png");
   }
@@ -217,8 +227,17 @@ form{
   }
   // 內文
   .form_text{
-    font-size: 15px;
+    font-size: 25px;
+    line-height: 45px;
     padding: 2% 0;
+    @media(max-width:1024px){
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media(max-width:768px){
+      font-size: 15px;
+      line-height: 20px;
+    } 
   }
   // 表格區塊
   .forms{
@@ -234,8 +253,9 @@ form{
         width:49%;
         padding: 15px 50px;
         margin-bottom: 34px;
+        font-size: 20px;
         @media(max-width:768px){
-          width: 100%;
+          font-size: unset;
         }
       }
       select{
@@ -244,8 +264,9 @@ form{
         padding: 15px 50px;
         margin-bottom: 34px;
         color: #878787;
+        font-size: 20px;
         @media(max-width:768px){
-          width: 100%;
+          font-size: unset;
         }
       }
     }
@@ -255,6 +276,10 @@ form{
       // margin-bottom: 34px;
       padding: 15px 50px;
       resize: none;
+      font-size: 20px;
+      @media(max-width:768px){
+        font-size: 16px;
+      }
     }
     .btn{
       display: flex;

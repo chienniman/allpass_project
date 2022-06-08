@@ -1,3 +1,7 @@
+$(window).load(function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+  $("#status").delay(2000).fadeOut(3000); //delay --> 延遲幾秒才fadeOut
+  $("#preloader").delay(2000).fadeOut(3000);
+})
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   effect: "fade",
@@ -15,11 +19,10 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 var swiper1 = new Swiper(".mySwiper1", {
   loop: true,
-  spaceBetween: 300,
-  slidesPerView: 2,
+  spaceBetween: 250,
+  slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
   autoplay: {

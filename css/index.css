@@ -3,6 +3,34 @@ body {
   background: #f4f2e6;
 }
 
+/*  蓋住畫面的底色色塊  */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #6accbf;
+  z-index: 9999;
+  /* loading的gif坐標*/
+}
+
+#preloader #status {
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#preloader #status p {
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
 #header {
   z-index: 100;
   top: 0;
@@ -348,10 +376,15 @@ body {
   }
 }
 
+#main #news #noticias .noticia .title_of_noticia a {
+  color: #000;
+}
+
 #main #news #noticias .noticia .time {
   font-size: 20px;
   color: #6c6c6c;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -477,8 +510,8 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 {
-  overflow: unset;
-  width: 50%;
+  overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
@@ -514,8 +547,8 @@ body {
 
 #main #meal_card .meal_swiper .card .mySwiper1 .plate {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background-image: url("../pics/popular_meals/plate.png");
   background-size: cover;
 }
@@ -639,6 +672,12 @@ body {
 
 #main #social_feedback .post .inner_post {
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #main #social_feedback .post .sec_post {
+    display: none;
+  }
 }
 
 #footer {
