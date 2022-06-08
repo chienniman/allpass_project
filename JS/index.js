@@ -1,6 +1,6 @@
 $(window).load(function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-  $("#status").delay(1000).fadeOut(1000); //delay --> 延遲幾秒才fadeOut
-  $("#preloader").delay(1500).fadeOut(300);
+  $("#status").delay(1500).fadeOut(3000); //delay --> 延遲幾秒才fadeOut
+  $("#preloader").delay(2000).fadeOut(2000);
 })
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
