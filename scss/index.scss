@@ -366,8 +366,8 @@ body {
           }
         }
         .mySwiper1 {
-          overflow: unset;
-          @include size(50%, 100%);
+          overflow: hidden;
+          @include size(100%, 100%);
           .swiper-slide {
             position: relative;
             border-radius: 8%;
@@ -390,8 +390,7 @@ body {
           }
           .plate{
             position: relative;
-            width: 500px;
-            height: 500px;
+            @include size(300px,300px);
             background-image: url('../pics/popular_meals/plate.png');
             background-size: cover;
             img{
