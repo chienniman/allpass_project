@@ -33,6 +33,24 @@ body {
   background-size: 100%;
   // background: $primary_color;
 
+  // scrollbar更改設計實驗
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient(#afdfd3, #fffdf0, #afdfd3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #FFAD3D;
+    border-radius: 50px;
+
+    &:hover {
+      background-image: linear-gradient(#e94619, #ffea00);
+    }
+  }
+
 }
 
 // 頁首固定在視窗上方
