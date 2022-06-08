@@ -394,7 +394,7 @@ body {
 }
 
 #main #meal_card {
-  width: 80%;
+  width: 100%;
   height: unset;
   margin: 0 auto;
 }
@@ -473,6 +473,12 @@ body {
   width: 50%;
 }
 
+@media (max-width: 1430px) {
+  #main #meal_card .meal_swiper .card .mySwiper2 {
+    width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   #main #meal_card .meal_swiper .card .mySwiper2 {
     width: 100%;
@@ -493,7 +499,17 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text {
-  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10%;
+  padding: 100px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -505,17 +521,42 @@ body {
   font-size: 32px;
 }
 
+#main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text .text li {
+  margin-bottom: 10%;
+  font-size: 32px;
+}
+
+@media (max-width: 1300px) {
+  #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text .text li {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text .text li {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide .bg-text .text .story {
+    display: none;
+  }
+}
+
 #main #meal_card .meal_swiper .card .mySwiper2 .swiper-slide:hover .bg-text {
   display: none;
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  overflow: unset;
+  width: 70%;
+  height: 70%;
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide {
+  padding: 10px 125px 0 0;
+  width: 100%;
   position: relative;
   border-radius: 8%;
   display: -webkit-box;
@@ -529,38 +570,22 @@ body {
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide img {
-  width: 90%;
-  height: 60%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 25vw;
+}
+
+@media (max-width: 768px) {
+  #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide img {
+    width: 40vw;
+  }
 }
 
 #main #meal_card .meal_swiper .card .mySwiper1 .swiper-slide .text {
-  top: 400px;
-  left: 155px;
+  top: 0;
+  left: 0;
   position: absolute;
   white-space: nowrap;
   padding: 7% 0;
   font-size: 24px;
-}
-
-#main #meal_card .meal_swiper .card .mySwiper1 .plate {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-image: url("../pics/popular_meals/plate.png");
-  background-size: cover;
-}
-
-#main #meal_card .meal_swiper .card .mySwiper1 .plate img {
-  display: block;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 150px;
-  top: 150px;
 }
 
 #main #evaluation-area {

@@ -314,6 +314,12 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 20%;
 }
 
+@media (max-width: 768px) {
+  #vue_menu .btns {
+    margin-top: 100px;
+  }
+}
+
 #vue_menu .card, #vue_menu .card-body {
   border-radius: 10px !important;
   background-color: rgba(255, 255, 255, 0.4);
@@ -371,7 +377,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #vue_menu .btn_groups {
-  max-width: 768px;
+  max-width: 767px;
 }
 
 #vue_menu .btn_groups .btn {
@@ -412,9 +418,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 #recommend {
   padding-bottom: 250px;
-  margin: 0 5%;
   background: #d1e7dd;
   height: 200px;
+  margin: 5% 20%;
+}
+
+@media (max-width: 1024px) {
+  #recommend {
+    margin: 0 15%;
+  }
 }
 
 @media (max-width: 830px) {
@@ -424,8 +436,15 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+@media (max-width: 768px) {
+  #recommend {
+    margin: 5% 10%;
+  }
+}
+
 @media (max-width: 576px) {
   #recommend {
+    margin: 5% 5%;
     height: 400px;
   }
 }
