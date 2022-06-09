@@ -126,6 +126,7 @@ body {
       justify-content: center;
       align-items: center;
       border: 5px solid #f4bd72;
+      cursor: pointer;
       .line {
         height: 3px;
         width: 20px;
@@ -531,17 +532,8 @@ ul{
       left:40%;
       top: -200px;
     }
-    .mask{
-      @include size(45%, 100%);
-      position: absolute;
-      top: -200px;
-      left:40%;
-      background: rgba(101, 101, 101, 0.6);
-      opacity: 0.8;
-      border-radius: 50%;
-    }
-    .mask:hover{
-      display: none;
+    img:hover{
+      transform: scale(1.2);
     }
   }
   .item3{
@@ -639,20 +631,8 @@ ul{
       left:-5%;
       top: -330px;
     }
-    // img:hover{
-    //   transform: scale(1.2);
-    // }
-    .mask{
-      @include size(50%, 100%);
-      position: absolute;
-      left:-5%;
-      top: -330px;
-      background: rgba(101, 101, 101, 0.6);
-      opacity: 0.8;
-      border-radius: 50%;
-    }
-    .mask:hover{
-      display: none;
+    img:hover{
+      transform: scale(1.2);
     }
   }
   .item5{
@@ -664,20 +644,8 @@ ul{
       left:50%;
       top: -270px;
     }
-    // img:hover{
-    //   transform: scale(1.2);
-    // }
-    .mask{
-      @include size(35%, 100%);
-      position: absolute;
-      left:50%;
-      top: -270px;
-      background: rgba(101, 101, 101, 0.6);
-      opacity: 0.8;
-      border-radius: 50%;
-    }
-    .mask:hover{
-      display: none;
+    img:hover{
+      transform: scale(1.2);
     }
   }
   .item6{
