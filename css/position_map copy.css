@@ -273,14 +273,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 #main .banner {
   background-image: url("../pics/posiback.png");
-  background-position: 0% 0%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 50px 70px;
+  padding: 20px 70px 140px 70px;
   margin-top: 50px;
 }
 
@@ -347,19 +347,38 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+#main .banner .position-left .left-inner .serve {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .banner .position-left .left-inner .serve .serve-list {
+  text-align: center;
+  font-size: calc(0px + (100vw / 45));
+  font-weight: 600;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  #main .banner .position-left .left-inner .serve .serve-list {
+    font-size: 24px;
+  }
+}
+
 #main .banner .position-right {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 15px;
-}
-
-#main .banner .position-right .right-inner {
-  width: 100%;
 }
 
 #main .banner .position-right .right-inner .title {
@@ -374,68 +393,29 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 
+#main .banner .position-right .right-inner .word {
+  border-bottom: 2px solid white;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: justify;
+  line-height: 40px;
+  padding: 30px 0px;
+  margin-bottom: 20px;
+}
+
 #main .banner .position-right .right-inner .address {
-  padding: 50px 0px 0px 0px;
+  padding: 30px 0px;
 }
 
 #main .banner .position-right .right-inner .address p {
   font-size: 30px;
   font-weight: 600;
   color: white;
-  padding-bottom: 50px;
-}
-
-#main .banner .position-right .right-inner .address .open-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-#main .banner .position-right .right-inner .address .open-time p {
-  font-size: 30px;
-  font-weight: 600;
-  color: white;
-}
-
-#main .banner .position-right .right-inner .serve {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#main .banner .position-right .right-inner .serve .serve-list {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  color: white;
-}
-
-@media (max-width: 900px) {
-  #main .banner .position-right .right-inner .serve .serve-list {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 1920px) {
-  #main .banner {
-    background-image: url("../pics/posiback1920.png");
-  }
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1440px) {
-  #main .banner {
-    background-image: url("../pics/posiback.png");
-  }
   #main .banner .position-left {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -663,4 +643,4 @@ body::-webkit-scrollbar-thumb:hover {
   top: 100px;
   position: absolute;
 }
-/*# sourceMappingURL=position_map.css.map */
+/*# sourceMappingURL=position_map copy.css.map */

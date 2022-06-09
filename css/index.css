@@ -589,7 +589,7 @@ body {
 }
 
 #main #evaluation-area {
-  padding: 50px 150px;
+  padding: 50px 10%;
   background-color: #F4F2E6;
 }
 
@@ -611,45 +611,96 @@ body {
   padding-bottom: 20px;
 }
 
-#main #evaluation-area #swiper .swiper {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #main #evaluation-area #swiper .swiper .swiper-wrapper {
   padding-bottom: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide {
-  /* Center slide text vertically */
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box {
+  background-color: white;
+  border-radius: calc(10px + ((100vw / 100) * 2));
+  padding: calc((100vw / 30) * 2) 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box .user-name {
+  width: calc((100vw / 100)*20);
+  height: calc((100vw / 100)*20);
+  background-color: #E3952A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
 }
 
-#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid #868686;
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box .user-name p {
+  font-size: calc((100vw / 20) * 2);
+  font-weight: 800;
+  color: white;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box .word-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box .word-box .user-word {
+  width: calc((100vw / 5) * 2);
+  padding-left: calc(10px + ((100vw / 100) * 2));
+  font-size: calc(0px + ((100vw / 100) * 2));
+  font-weight: 800;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-wrapper .swiper-slide .user-chat-box .word-box .user-word .star-img {
+  padding: calc(0px + ((100vw / 100) * 1)) 0px;
 }
 
 #main #evaluation-area #swiper .swiper .swiper-pagination span {
-  width: 20px;
-  height: 20px;
+  width: calc(5px + (100vw / 70));
+  height: calc(5px + (100vw / 70));
   background-color: #FEAD3B;
   margin: 0px 5px;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-button-next {
+  height: 0px;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-button-next::after {
+  font-size: calc(20px + ((100vw / 90) * 2));
+  color: #2fbfac;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-button-prev {
+  height: 0px;
+}
+
+#main #evaluation-area #swiper .swiper .swiper-button-prev::after {
+  font-size: calc(20px + ((100vw / 90) * 2));
+  color: #2fbfac;
 }
 
 #main #social_feedback {

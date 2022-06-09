@@ -298,21 +298,44 @@
             <div id="swiper">
               <div class="swiper mySwiper3">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img width="100%" src="./pics/index/chat.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="100%" src="./pics/index/chat2.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="100%" src="./pics/index/chat3.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="100%" src="./pics/index/chat4.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img width="100%" src="./pics/index/chat5.jpg" alt="">
-                  </div>
+                    
+                    <!-- 串資料時下面這個範例DIV請註解 -->
+                    <div class="swiper-slide">
+                        <div class="user-chat-box">
+                            <div class="user-name">
+                                <p>A</p>
+                            </div>
+                            <div class="word-box">
+                                <div class="user-word">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Voluptate expedita, deleniti, ad porro pariatur corporis magnam perspiciatis
+                                    odio dicta dolor excepturi aut vel? Deleniti beatae quisquam at, aspernatur odio
+                                    consequatur?
+                                    <div class="star-img">
+                                        <img src="../pics/index/star.png" width="30%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 串資料時下面這個串聯@foreachDIV請解開註解 -->
+                    <!-- @foreach ($carouselFeedbacks as $item)
+                    <div class="swiper-slide">
+                        <div class="user-chat-box">
+                            <div class="user-name">
+                                <p>{{ mb_substr( $item->name, 0, 1) }}</p>
+                            </div>
+                            <div class="word-box">
+                                <div class="user-word">{{$item->suggestion}}
+                                    <div class="star-img">
+                                        <img src="../pics/index/star.png" width="30%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach -->
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
