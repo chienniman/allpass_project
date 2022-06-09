@@ -76,6 +76,7 @@ body {
         @include position(15px, 125px, 0, 0);
         border-radius: 50%;
         background-color: #6accbf;
+        z-index: 5;
         @media (max-width: 768px) {
           @include size(100px, 100px);
           @include position(35px, 60px, 0, 0);
@@ -218,13 +219,14 @@ body {
     }
   }
 }
-#top_img{
-  background-image: url("../pics/balls/top_img.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vw;
-}
+
 #main {
+  #top_img{
+    background-image: url("../pics/top_img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+  }
   // 最新消息
   #news {
     @include size(80%, unset);
