@@ -170,6 +170,7 @@ body::-webkit-scrollbar-thumb:hover {
       -ms-flex-align: center;
           align-items: center;
   border: 5px solid #f4bd72;
+  cursor: pointer;
 }
 
 #header .burger_link .burger .line {
@@ -801,19 +802,9 @@ ul .item2 img {
   top: -200px;
 }
 
-ul .item2 .mask {
-  width: 45%;
-  height: 100%;
-  position: absolute;
-  top: -200px;
-  left: 40%;
-  background: rgba(101, 101, 101, 0.6);
-  opacity: 0.8;
-  border-radius: 50%;
-}
-
-ul .item2 .mask:hover {
-  display: none;
+ul .item2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 ul .item3 {
@@ -959,19 +950,9 @@ ul .item4 img {
   top: -330px;
 }
 
-ul .item4 .mask {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  left: -5%;
-  top: -330px;
-  background: rgba(101, 101, 101, 0.6);
-  opacity: 0.8;
-  border-radius: 50%;
-}
-
-ul .item4 .mask:hover {
-  display: none;
+ul .item4 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 ul .item5 {
@@ -986,19 +967,9 @@ ul .item5 img {
   top: -270px;
 }
 
-ul .item5 .mask {
-  width: 35%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: -270px;
-  background: rgba(101, 101, 101, 0.6);
-  opacity: 0.8;
-  border-radius: 50%;
-}
-
-ul .item5 .mask:hover {
-  display: none;
+ul .item5 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 ul .item6 {

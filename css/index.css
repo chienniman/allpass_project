@@ -190,6 +190,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 5px solid #f4bd72;
+  cursor: pointer;
 }
 
 #header .burger_link .burger .line {
